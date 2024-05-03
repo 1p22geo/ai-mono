@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ollama RAG with LLAMA 3</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js" defer></script>
+  </head>
+  <body class="w-screen h-screen bg-emerald-100 overflow-scroll">
+    <div id="main" class="flex flex-col w-screen"></div>
+    <div class="fixed bottom-8 right-8 h-12 flex items-stretch justify-stretch">
+      <form method="post" enctype="multipart/form-data" action="/upload">
+      <input type="file" name="file" class="ml-4 outline-none p-2 self-center">
+      <input type="submit" value="Upload" class="cursor-pointer hover:underline">
+    </form>
+      <div id="spinner" class="w-12 h-12 outline hidden animate-spin"></div>
+      <input
+        type="text"
+        name="q"
+        id="q"
+        value=""
+        class="ml-4 outline-none w-[600px] rounded-l-full p-2 px-8"
+      />
+      <button
+        id="send"
+        class="bg-emerald-600 text-white p-2 px-4 rounded-r-full"
+      >
+        Send
+      </button>
+    </div>
+  </body>
+</html>

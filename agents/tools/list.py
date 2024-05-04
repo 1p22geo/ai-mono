@@ -8,7 +8,7 @@ from typing import Optional, Type, List
 # Import things that are needed generically
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import BaseTool
-import json
+import requests
 
 
 class Article(BaseModel):
@@ -19,18 +19,16 @@ class Article(BaseModel):
     )
 
 
-docs = []
-with open("data/data.json") as f:
-    temp = json.load(f)
-    for doc in temp:
-        ar = Article(
-            title=doc['title'],
-            ready=doc['ready']
-        )
-        docs.append(ar)
-
-
 def find() -> List[Article]:
+    print("LIST")
+    req = requests.get("http://192.168.50.156:3000/api/search")
+    res = req.json()
+    docs = []
+    for doc in res:
+        docs.append(Article(
+            title=doc['title'],
+            ready=doc['ready'],
+        ))
     return docs
 
 
@@ -48,13 +46,13 @@ class ListTool(BaseTool):
     def _run(
         self,
         run_manager: Optional[CallbackManagerForToolRun] = None,
-    ) -> float:
+    ) -> List[Article]:
         """Use the tool."""
         return find()
 
     async def _arun(
         self,
         run_manager: Optional[AsyncCallbackManagerForToolRun] = None,
-    ) -> float:
+    ) -> List[Article]:
         """Use the tool asynchronously."""
         return find()

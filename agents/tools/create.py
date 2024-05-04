@@ -22,33 +22,33 @@ class ArticleContent(BaseModel):
         description="Content of the article")
 
 
-def get(title: str) -> ArticleContent | None:
-    print(f"GET {title}")
+def create(title: str) -> ArticleContent | None:
+    print(f"CREATE {title}")
     q = urllib.parse.quote_plus(title)
-    req = requests.get(f"http://192.168.50.156:3000/api/search?q={q}")
+    req = requests.get(f"http://192.168.50.156:3000/api/page/{q}")
     res = req.json()
-    for doc in res:
+    try:
         return ArticleContent(
-            title=doc['title'],
-            ready=doc['ready'],
-            content=doc['content'],
+            title=res['title'],
+            ready=res['ready'],
+            content=res['content'],
         )
-    else:
+    except:
         return None
 
 
-class GetInput(BaseModel):
+class CreateInput(BaseModel):
     title: str = Field(
-        description="The title of the article to retrieve"
+        description="The title of the article to create or retrieve"
     )
 
 
-class GetTool(BaseTool):
-    name = "Get"
+class CreateTool(BaseTool):
+    name = "Create"
     description = (
-        "Retrieve a single article with its content."
+        "Create a new article with a given title. If there already exists such an article it will be retrieved instead."
     )
-    args_schema: Type[BaseModel] = GetInput
+    args_schema: Type[BaseModel] = CreateInput
 
     def _run(
         self,
@@ -56,7 +56,7 @@ class GetTool(BaseTool):
         run_manager: Optional[CallbackManagerForToolRun] = None,
     ) -> ArticleContent | None:
         """Use the tool."""
-        return get(title)
+        return create(title)
 
     async def _arun(
         self,
@@ -64,4 +64,4 @@ class GetTool(BaseTool):
         run_manager: Optional[AsyncCallbackManagerForToolRun] = None,
     ) -> ArticleContent | None:
         """Use the tool asynchronously."""
-        return get(title)
+        return create(title)

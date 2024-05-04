@@ -3,7 +3,7 @@ from langchain.callbacks.manager import (
     CallbackManagerForToolRun,
 )
 
-from typing import Optional, Type
+from typing import Optional, Type, List
 
 # Import things that are needed generically
 from langchain.pydantic_v1 import BaseModel, Field
@@ -12,56 +12,53 @@ import requests
 import urllib.parse
 
 
-class ArticleContent(BaseModel):
+class Article(BaseModel):
     title: str = Field(
         description="Title of the article")
     ready: bool = Field(
         description="Is the article ready or is it still being generated"
     )
-    content: str = Field(
-        description="Content of the article")
 
 
-def get(title: str) -> ArticleContent | None:
-    print(f"GET {title}")
-    q = urllib.parse.quote_plus(title)
+def search(query: str) -> List[Article]:
+    print(f"SEARCH {query}")
+    q = urllib.parse.quote_plus(query)
     req = requests.get(f"http://192.168.50.156:3000/api/search?q={q}")
     res = req.json()
+    docs = []
     for doc in res:
-        return ArticleContent(
+        docs.append(Article(
             title=doc['title'],
             ready=doc['ready'],
-            content=doc['content'],
-        )
-    else:
-        return None
+        ))
+    return docs
 
 
-class GetInput(BaseModel):
-    title: str = Field(
-        description="The title of the article to retrieve"
+class SearchInput(BaseModel):
+    query: str = Field(
+        description="The search query. Case-insensitive regex."
     )
 
 
-class GetTool(BaseTool):
-    name = "Get"
+class SearchTool(BaseTool):
+    name = "Search"
     description = (
-        "Retrieve a single article with its content."
+        "Search through articles in the database."
     )
-    args_schema: Type[BaseModel] = GetInput
+    args_schema: Type[BaseModel] = SearchInput
 
     def _run(
         self,
-        title: str,
+        query: str,
         run_manager: Optional[CallbackManagerForToolRun] = None,
-    ) -> ArticleContent | None:
+    ) -> List[Article]:
         """Use the tool."""
-        return get(title)
+        return search(query)
 
     async def _arun(
         self,
-        title: str,
+        query: str,
         run_manager: Optional[AsyncCallbackManagerForToolRun] = None,
-    ) -> ArticleContent | None:
+    ) -> List[Article]:
         """Use the tool asynchronously."""
-        return get(title)
+        return search(query)

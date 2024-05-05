@@ -5,62 +5,27 @@
  * @format
  */
 
-import React, { useCallback, useState } from 'react';
+import React, {useState} from 'react';
 import {
   Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
   View,
 } from 'react-native';
 
-import { constants } from './constants';
-
-import {
-  Colors,
-} from 'react-native/Libraries/NewAppScreen';
-
-
-import DocumentPicker, { DocumentPickerResponse } from 'react-native-document-picker'
-
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {RagStore} from './RagStore';
+import {Chat} from './Chat';
+import {AppMode} from './utils';
+import {Message} from './Chat/types';
 
 function App(): React.JSX.Element {
-  const [fileResponse, setFileResponse] = useState<DocumentPickerResponse[]>([]);
-  const [error, setError] = useState("")
-
-  const handleDocumentSelection = useCallback(async () => {
-    try {
-      const response = await DocumentPicker.pick({
-        allowMultiSelection: false,
-        presentationStyle: 'fullScreen',
-      });
-      setFileResponse(response);
-    } catch (err: any) {
-      setError(err.toString())
-    }
-  }, []);
-
-  const uploadFile = useCallback(async () => {
-    try {
-      let data = new FormData()
-      data.append('file', { uri: fileResponse[0].uri, type: fileResponse[0].type, name: fileResponse[0].name })
-      const response = await fetch(new URL("/upload", constants.ENDPOINT_URI), {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'multipart/form-data',
-        },
-        body: data
-      })
-      throw "Uploaded"
-    } catch (err: any) {
-      setError(err.toString())
-    }
-  }, [fileResponse]);
-
+  const [mode, setMode] = useState<AppMode>('chat');
   const isDarkMode = useColorScheme() === 'dark';
+  const [messages, setMessages] = useState<Message[]>([]);
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -76,39 +41,29 @@ function App(): React.JSX.Element {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <View>
-          <Text>
-            {error || "No error yet."}
-          </Text>
-          <Button title="Select file"
-            onPress={handleDocumentSelection}
-          ></Button>
-          {fileResponse.length == 1 ?
-            <>
-              <Text
-                style={styles.highlight}
-                numberOfLines={1}
-                ellipsizeMode={'middle'}>
-                Upload file:{fileResponse[0]?.name}
-              </Text>
-              <Button title="UPLOAD"
-                onPress={uploadFile}
-              ></Button>
-
-            </> : <></>}
-          {fileResponse.length > 1 ? <Text>
-            Please upload just a single file!
-          </Text> : <></>}
-
+          <View style={style.toggle}>
+            <Button title="chat" onPress={() => setMode('chat')} />
+            <Button title="store" onPress={() => setMode('store')} />
+          </View>
+          {(function () {
+            switch (mode) {
+              case 'chat':
+                return <Chat messages={messages} setMessages={setMessages} />;
+              case 'store':
+                return <RagStore />;
+            }
+          })()}
         </View>
       </ScrollView>
-    </SafeAreaView >
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  highlight: {
-    fontWeight: '700',
+export default App;
+
+const style = StyleSheet.create({
+  toggle: {
+    display: 'flex',
+    flexDirection: 'row',
   },
 });
-
-export default App;

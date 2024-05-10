@@ -55,20 +55,28 @@ document.querySelector("#send").onclick = async () => {
   document.querySelector("#spinner").classList.toggle("hidden");
 };
 const getFileType = (filename) => {
-  switch (filename.split('.').at(-1)) {
-    case 'txt':
-      return 'Text file';
-    case 'wav':
-      return 'WAV Sound recording';
-    case 'pdf':
-      return 'PDF document';
+  switch (filename.split(".").at(-1)) {
+    case "txt":
+      return "Text file";
+    case "wav":
+      return "WAV Sound recording";
+    case "pdf":
+      return "PDF document";
     default:
-      return '<<unknown>>';
+      return "<<unknown>>";
   }
 };
 
-fetch("/files").then(res=>res.json().then(json=>{
-  document.querySelector("#files").innerHTML = `<h1 class="text-xl">Files in RAG store</h1>` + json.map(file=>`
+fetch("/files").then((res) =>
+  res.json().then((json) => {
+    document.querySelector("#files").innerHTML =
+      `<h1 class="text-xl">Files in RAG store</h1>` +
+      json
+        .map(
+          (file) => `
   <div class="p-4 bg-white rounded-md flex flex-row items-center justify-between"><div>${file}</div><div class="italic">${getFileType(file)}</div></div>
-`).join("")
-}))
+`,
+        )
+        .join("");
+  }),
+);

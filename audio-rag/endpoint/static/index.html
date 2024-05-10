@@ -8,13 +8,25 @@
     <script src="./main.js" defer></script>
   </head>
   <body class="w-screen h-screen bg-emerald-100 overflow-scroll flex flex-row">
-    <div id="files" class="flex flex-col w-[30%] p-8 gap-4"><h1 class="text-xl">Files in RAG store</h1></div>
-    <div id="main" class="flex flex-col w-[70%] p-8 gap-4"><h1 class="text-xl">Chat</h1></div>
+    <div id="files" class="flex flex-col w-[30%] p-8 gap-4">
+      <h1 class="text-xl">Files in RAG store</h1>
+    </div>
+    <div id="main" class="flex flex-col w-[70%] p-8 gap-4">
+      <h1 class="text-xl">Chat</h1>
+    </div>
     <div class="fixed bottom-8 right-8 h-12 flex items-stretch justify-stretch">
       <form method="post" enctype="multipart/form-data" action="/upload">
-      <input type="file" name="file" class="ml-4 outline-none p-2 self-center">
-      <input type="submit" value="Upload" class="cursor-pointer hover:underline">
-    </form>
+        <input
+          type="file"
+          name="file"
+          class="ml-4 outline-none p-2 self-center"
+        />
+        <input
+          type="submit"
+          value="Upload"
+          class="cursor-pointer hover:underline"
+        />
+      </form>
       <div id="spinner" class="w-12 h-12 outline hidden animate-spin"></div>
       <input
         type="text"

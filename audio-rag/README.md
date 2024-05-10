@@ -7,6 +7,7 @@ AI app to answer questions based on documents and voice recordings. Completely o
 # Running and deploying
 
 ## Install endpoint dependencies
+
 - python libraries:
   - langchain
   - langchain_community
@@ -29,6 +30,7 @@ python -m flask run -h 0.0.0.0
 Edit `native/src/constants.ts`, setting `ENDPOINT_URI` to the address of your endpoint server ( all mobile devices running the app will connect back to it )
 
 ## Build React Native app
+
 ```shell
 cd native
 yarn install
@@ -36,4 +38,3 @@ yarn build
 ```
 
 ## copy native/android/audiorag.apk to your mobile device and install the app.
-

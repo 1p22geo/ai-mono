@@ -11,9 +11,17 @@
     <div id="main" class="flex flex-col w-screen"></div>
     <div class="fixed bottom-8 right-8 h-12 flex items-stretch justify-stretch">
       <form method="post" enctype="multipart/form-data" action="/upload">
-      <input type="file" name="file" class="ml-4 outline-none p-2 self-center">
-      <input type="submit" value="Upload" class="cursor-pointer hover:underline">
-    </form>
+        <input
+          type="file"
+          name="file"
+          class="ml-4 outline-none p-2 self-center"
+        />
+        <input
+          type="submit"
+          value="Upload"
+          class="cursor-pointer hover:underline"
+        />
+      </form>
       <div id="spinner" class="w-12 h-12 outline hidden animate-spin"></div>
       <input
         type="text"

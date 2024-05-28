@@ -1,6 +1,6 @@
-import {Dispatch, SetStateAction} from 'react';
-import {Message} from './types';
-import {constants} from '../constants';
+import { Dispatch, SetStateAction } from 'react';
+import { Message } from './types';
+import { constants } from '../constants';
 
 export interface ResponseMessage {
   answer: string;
@@ -19,6 +19,7 @@ export const sendMessage = async (
   const res = await fetch(new URL('/api/query', constants.ENDPOINT_URI), {
     headers: {
       'Content-Type': 'application/json',
+      'ngrok-skip-browser-warning': 'true'
     },
     body: JSON.stringify({
       prompt: message,

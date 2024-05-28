@@ -15,6 +15,7 @@ AI app to answer questions based on documents and voice recordings. Completely o
 - system dependencies:
   - ffmpeg
   - pocketsphinx
+  - android SDK and Android development environment (refer to react native docs or [native/README.md](./native/README.md))
 - services:
   - ollama
 
@@ -22,7 +23,7 @@ AI app to answer questions based on documents and voice recordings. Completely o
 
 ```
 cd endpoint
-python -m flask run -h 0.0.0.0
+python -m flask run -h 0.0.0.0 # start the server, don't close this terminal
 ```
 
 ## Set up connection to endpoint
@@ -31,6 +32,7 @@ Edit `native/src/constants.ts`, setting `ENDPOINT_URI` to the address of your en
 
 ## Build React Native app
 
+refer to [native/README.md](./native/README.md)
 ```shell
 cd native
 yarn install

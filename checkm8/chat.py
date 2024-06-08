@@ -1,7 +1,6 @@
-from langchain_community.embeddings import OllamaEmbeddings
+from langchain_community.embeddings.ollama import OllamaEmbeddings
 from langchain_community.chat_models.ollama import ChatOllama
-from langchain import hub
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+from langchain_core.messages import HumanMessage, SystemMessage, AIMessage, AnyMessage
 import numpy as np
 import requests
 import json
@@ -32,9 +31,7 @@ def chat(history, user, settings):
     uname = user["uname"]
     system_message = prompts.CHAT_SYSTEM[settings["behavior"]]
     system = f"{system_message}\n\nThe user you are talking to is: \"{uname}\""
-    messages = [
-        SystemMessage(content=system)
-    ]
+    messages: list[AnyMessage] = [SystemMessage(content=system)]
     for message in history:
         match message["actor"]:
             case "user":
@@ -101,4 +98,5 @@ def marketing(product, info, style, items):
         res += v
         res += '```'
         res += "\n\n"
+    return res
     return res

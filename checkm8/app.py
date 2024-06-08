@@ -37,3 +37,11 @@ def api_sentiment():
     if not req:
         return flask.abort(400)
     return flask.jsonify(chat.sentiment(req["content"]))
+
+
+@app.route("/api/marketing", methods=["POST"])
+def api_marketing():
+    req = flask.request.json
+    if not req:
+        return flask.abort(400)
+    return flask.jsonify(chat.marketing(**req))

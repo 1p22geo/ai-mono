@@ -63,3 +63,42 @@ def sentiment(content):
     sentiment_prompt = prompts.SENTIMENT
     prompt = f"{sentiment_prompt}\n```\n{content}\n```"
     return ollama_json(prompt)
+
+
+def marketing(product, info, style, items):
+    slogans = ollama_json(prompts.MK_SLOGANS(product, info))['slogans']
+    sl_list = ""
+    for sl in slogans:
+        sl_list += "- "
+        sl_list += sl
+        sl_list += "\n"
+
+    copy_prompt = prompts.MK_BODY(
+        product, info, sl_list, style)
+    copy = ollama.invoke(copy_prompt).content
+    item_content = {}
+    for item in items.split("\n"):
+        if item.startswith("-"):
+            item = item.lstrip("-")
+        item = item.strip()
+        item_content[item] = ollama.invoke(prompts.MK_ITEM(
+            product, info, sl_list, style, copy, item)).content
+
+    res = ""
+    res += "Marketing campaign summary"
+    res += "=========================="
+    res += '\n\n'
+    res += "Sample product slogans"
+    res += "----------------------"
+    res += "\n"
+    res += sl_list
+    res += "\n\n"
+    for k, v in item_content.items():
+        res += k
+        res += "-"*len(k)
+        res += "\n"
+        res += '```'
+        res += v
+        res += '```'
+        res += "\n\n"
+    return res

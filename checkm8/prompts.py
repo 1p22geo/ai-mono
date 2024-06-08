@@ -27,3 +27,55 @@ Do not be afraid to use nested objects and complicated structures.
 Provide a long and informative response.
 Output only the answer.
 """
+
+
+def MK_SLOGANS(prod, info): return f"""
+Create some marketing slogans for a product described as: "{prod}".
+Here's some more information about it:
+```
+{info}
+```
+Answer only using JSON.
+Answer a single JSON array with the marketing slogans, named as `slogans`.
+Output only the answer.
+"""
+
+
+def MK_BODY(prod, info, slogans, style): return f"""
+Create some marketing copy text for a product described as: "{prod}".
+Here's some more information about it:
+```
+{info}
+```
+The style was described as:
+```
+{style}
+```
+Here's some ready marketing slogans done by a professional:
+```
+{slogans}
+```
+The text should be reusable, among all leaflets, scripts, campaigns and webpages refering to "{prod}"
+"""
+
+
+def MK_ITEM(prod, info, slogans, style, copy, item): return f"""
+Create a/n "{item}" as part of a marketing campaign for a product described as: "{prod}"
+Here's some more information about it:
+```
+{info}
+```
+The style was described as:
+```
+{style}
+```
+Here's some ready marketing slogans done by a professional:
+```
+{slogans}
+```
+Here's some body copy text:
+```
+{copy}
+```
+Output just the {item}
+"""

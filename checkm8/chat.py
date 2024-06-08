@@ -39,7 +39,6 @@ def chat(history, user, settings):
             case "Checkm8":
                 messages.append(AIMessage(content=message["content"]))
 
-    print(messages)
     return ollama.invoke(messages).content
 
 

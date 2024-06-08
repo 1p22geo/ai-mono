@@ -3,6 +3,8 @@ from langchain_community.chat_models.ollama import ChatOllama
 from langchain import hub
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 import numpy as np
+import requests
+import json
 
 import prompts
 
@@ -14,6 +16,16 @@ ollama = ChatOllama(
     base_url='http://minisforum:9000',
     model="llama3"
 )
+
+
+def ollama_json(prompt):
+    res = requests.post("http://minisforum:9000/api/generate", json={
+        "model": "llama3",
+        "prompt": prompt,
+        "format": "json",
+        "stream": False
+    }).json()
+    return json.loads(res["response"])
 
 
 def chat(history, user, settings):
@@ -45,3 +57,9 @@ def vector(text1, text2):
     corr_norm = corr**2 / a_norm / b_norm
 
     return corr_norm
+
+
+def sentiment(content):
+    sentiment_prompt = prompts.SENTIMENT
+    prompt = f"{sentiment_prompt}\n```\n{content}\n```"
+    return ollama_json(prompt)

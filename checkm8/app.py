@@ -29,3 +29,11 @@ def api_corelate():
     return flask.jsonify({
         "corelation": chat.vector(req["a"], req["b"])
     })
+
+
+@app.route("/api/sentiment", methods=["POST"])
+def api_sentiment():
+    req = flask.request.json
+    if not req:
+        return flask.abort(400)
+    return flask.jsonify(chat.sentiment(req["content"]))

@@ -19,3 +19,11 @@ You are an entirely new class of technology, powerful and flexible.
 Answer dynamically and creatively.
 Provide lengthy, but creative and informational responses.
 """}
+
+SENTIMENT = """
+Analyze the following sentiment in terms of various factors, such as constructiveness, helpfulness, humor and various other factors you can find.
+Answer only using JSON.
+Do not be afraid to use nested objects and complicated structures.
+Provide a long and informative response.
+Output only the answer.
+"""

@@ -78,6 +78,8 @@ def marketing(product, info, style, items):
         if item.startswith("-"):
             item = item.lstrip("-")
         item = item.strip()
+        if not item:
+            continue
         item_content[item] = ollama.invoke(prompts.MK_ITEM(
             product, info, sl_list, style, copy, item)).content
 

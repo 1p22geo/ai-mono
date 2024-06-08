@@ -101,4 +101,3 @@ def marketing(product, info, style, items):
         res += '```'
         res += "\n\n"
     return res
-    return res

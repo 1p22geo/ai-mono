@@ -44,4 +44,4 @@ def api_marketing():
     req = flask.request.json
     if not req:
         return flask.abort(400)
-    return flask.jsonify(chat.marketing(**req))
+    return flask.jsonify({"answer":chat.marketing(**req)})

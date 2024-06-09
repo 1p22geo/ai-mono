@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Checkm8 | chat</title>
+  </head>
+  <body
+    class="w-screen bg-blue-100 h-content flex flex-row pb-16 mb-16 accent-blue-600"
+  >
+    <div id="nav" class="flex flex-col w-[50px] p-8 gap-4">
+      <a
+        href="./chat.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >C</a
+      >
+      <a
+        href="./language.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >L</a
+      >
+      <a
+        href="./sentiment.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >S</a
+      >
+      <a
+        href="./marketing.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >M</a
+      >
+      <a
+        href="./custom.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >W</a
+      >
+    </div>
+    <div id="main" class="flex flex-col w-[80%] p-8 gap-4">
+      <h1 class="text-xl">Checkm8 Scripting Language - documentation</h1>
+      <h2 class="text-md mt-4 mb-8">Not that there is a lot of it.</h2>
+      The interpreter ignores empty lines and comments
+      <pre id="pre" class="w-full bg-blue-200 p-4 min-h-[200px] font-mono mb-4">
+#this script is basically empty
+
+
+    #          whitespace is allowed too
+
+# ********
+# multiline
+# comments
+# are
+# not
+# here
+# yet
+# ********
+
+# syntax := symbols ]= are # alowed $
+      </pre>
+
+      Set variables with := (CSL is not strongly typed, and constants don't exist)
+      <pre id="pre" class="w-full bg-blue-200 p-4 min-h-[200px] font-mono mb-4">
+myVar:=some value
+myvar:=CSL is case sensitive
+
+myOtherVar:=Newlines\nAre Like\nThis
+SomeDifferent Var \n\n aaah:=Variable names can be anything
+nestedVAR:=The value of myVar is: $myVar
+VARNAME:=asdf
+$VARNAME:=The name of this variable is actually `asdf`\ndon't let the syntax fool you
+
+SOMETHING:=$VARNAME
+# the value of $SOMETHING is asdf
+
+SOMETHING2:=$$VARNAME
+# the value of $SOMETHING2 is $asdf, or "The name of this variable is actually..."
+
+SOME_$$VARNAME_value:=$SOMETHING2
+# the name of this variable includes the string "The name of this variable is actually ..."
+
+uselessVAR:=This var includes the literal string $NONEXISTENTVAR, since it is not a variable
+
+my_OUTPut_variable:=The last declared variable is the output of the whole script
+</pre>
+      Run prompts with ]=
+      <pre id="pre" class="w-full bg-blue-200 p-4 min-h-[200px] font-mono mb-4">
+# user data
+TITLE:=Physics in high school
+DESC:=A webpage tutoring physics to a high school student.
+
+# nice multiline variable
+myPrompt:=Create a HTML5 webpage. The title is $TITLE.
+myPrompt:=$myPrompt\nThe user supplied a description:
+myPrompt:=$myPrompt\n```
+myPrompt:=$myPrompt\n$DESC
+myPrompt:=$myPrompt\n```
+
+myValue]=$myPrompt
+someOtherValue]=Improve this HTML5 webpage in terms of syntax correctness\n```\n$myValue\n```
+
+
+Output:=The webpage is:\n```\n$myValue\n```\n\nImproved webpage\n```\n$someOtherValue\n```
+</pre>
+
+    </div>
+  </body>
+</html>

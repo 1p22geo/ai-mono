@@ -47,7 +47,7 @@ Here's some more information about it:
 ```
 {info}
 ```
-The style was described as:
+Your style should match the following description:
 ```
 {style}
 ```
@@ -65,7 +65,7 @@ Here's some more information about it:
 ```
 {info}
 ```
-The style was described as:
+Your style should match the following description:
 ```
 {style}
 ```

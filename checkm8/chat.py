@@ -101,6 +101,7 @@ def marketing(product, info, style, items):
         res += "\n\n"
     return res
 
+
 def run_script(script):
     vars = {}
     for cmd in script.split("\n"):
@@ -116,7 +117,7 @@ def run_script(script):
         varname = cmd[:ix]
         op = cmd[ix]
         content = cmd[ix+2:]
-        for k,v in vars.items():
+        for k, v in vars.items():
             varname = varname.replace(f"${k}", v)
             varname = varname.replace("\\n", "\n")
             content = content.replace(f"${k}", v)
@@ -127,6 +128,6 @@ def run_script(script):
             case "]":
                 vars[varname] = ollama.invoke(content).content
             case _:
-                raise SyntaxError(f"SYNTAX ERROR. Incorrect operation: `{cmd}`")
+                raise SyntaxError(
+                    f"SYNTAX ERROR. Incorrect operation: `{cmd}`")
     return list(vars.values())[-1]
-

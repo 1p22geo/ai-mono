@@ -17,7 +17,9 @@ document.querySelector("#send").onclick = async ()=>{
     },
   });
   const res = await req.json();
-  document.querySelector("pre").innerText = res.answer
-
+  document.querySelector("#pre").innerText = res.answer
+  document.querySelector("#download").innerText = `Download [${product}.txt]`
+  document.querySelector("#download").download = `${product}.txt`
+  document.querySelector("#download").href = `data:text/plain;base64,${btoa(res.answer)}`
   document.querySelector("#spinner").classList.toggle("hidden");
 }

@@ -83,20 +83,19 @@ def marketing(product, info, style, items):
             product, info, sl_list, style, copy, item)).content
 
     res = ""
-    res += "Marketing campaign summary"
+    res += "Marketing campaign summary\n"
     res += "=========================="
     res += '\n\n'
-    res += "Sample product slogans"
+    res += "Sample product slogans\n"
     res += "----------------------"
     res += "\n"
     res += sl_list
     res += "\n\n"
     for k, v in item_content.items():
         res += k
+        res += "\n"
         res += "-"*len(k)
         res += "\n"
-        res += '```'
         res += v
-        res += '```'
         res += "\n\n"
     return res

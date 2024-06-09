@@ -45,3 +45,13 @@ def api_marketing():
     if not req:
         return flask.abort(400)
     return flask.jsonify({"answer":chat.marketing(**req)})
+
+@app.route("/api/script", methods=["POST"])
+def api_script():
+    req = flask.request.json
+    if not req:
+        return flask.abort(400)
+    try:
+        return flask.jsonify({"answer":chat.run_script(req["script"])})
+    except Exception as e:
+        return flask.jsonify({"answer":str(e)})

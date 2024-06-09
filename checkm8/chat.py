@@ -4,6 +4,7 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage, AnyM
 import numpy as np
 import requests
 import json
+import re
 
 import prompts
 
@@ -99,3 +100,33 @@ def marketing(product, info, style, items):
         res += v
         res += "\n\n"
     return res
+
+def run_script(script):
+    vars = {}
+    for cmd in script.split("\n"):
+        cmd = cmd.strip()
+        if cmd.startswith("#"):
+            continue
+        if not cmd:
+            continue
+        assignment = re.search(r"(:=)|(\]=)", cmd)
+        if not assignment:
+            raise SyntaxError(f"SYNTAX ERROR. Incorrect operation: `{cmd}`")
+        ix = assignment.span()[0]
+        varname = cmd[:ix]
+        op = cmd[ix]
+        content = cmd[ix+2:]
+        for k,v in vars.items():
+            varname = varname.replace(f"${k}", v)
+            varname = varname.replace("\\n", "\n")
+            content = content.replace(f"${k}", v)
+            content = content.replace("\\n", "\n")
+        match op:
+            case ":":
+                vars[varname] = content
+            case "]":
+                vars[varname] = ollama.invoke(content).content
+            case _:
+                raise SyntaxError(f"SYNTAX ERROR. Incorrect operation: `{cmd}`")
+    return list(vars.values())[-1]
+

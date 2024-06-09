@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./custom.js"></script>
+    <title>Checkm8 | chat</title>
+  </head>
+  <body class="w-screen bg-blue-100 h-content flex flex-row pb-16 mb-16 accent-blue-600">
+    <div id="nav" class="flex flex-col w-[50px] p-8 gap-4">
+      <a href="./chat.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">C</a>
+      <a href="./language.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">L</a>
+      <a href="./sentiment.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">S</a>
+      <a href="./marketing.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">M</a>
+      <a href="./custom.html" class="w-12 h-12 bg-blue-600 rounded-sm grid place-content-center">W</a>
+    </div>
+    <div id="main" class="flex flex-col w-[80%] p-8 gap-4">
+      <h1 class="text-xl">Custom workflow</h1>
+      <h2 class="text-md mt-4">Workflow script</h2>
+<textarea id="script" class="p-2 font-lg max-w-[1000px] h-[300px]">
+# define some constants with :=
+TITLE:=Physics in school
+DESC:=Lading page for physics tutorial for high school students
+
+# comments and empty lines are ignored
+# run a prompt with ]=
+OUTLINE]=Create a header outline for a webpage of title $TITLE, described as "$DESC"
+HTML]=Create a HTML5/TailwindCSS webpage of title $TITLE.\n Here's a basic outline: "$OUTLINE"
+
+# the last variable is the output.
+OUT:=Outline:\n$OUTLINE\n\nPage:\n$HTML
+</textarea>
+      <button id="send" class="w-24 h-10 bg-blue-500">Evaluate</button>
+      <div id="spinner" class="w-12 h-12 outline hidden animate-spin"></div>
+
+      <h1 class="text-xl">Model answer:</h1>
+      <a href="##" class="hover:underline" id="download">Download [not ready yet]</a>
+      <div id="pre" class="w-full bg-blue-200 p-4 min-h-[200px] font-mono"></div>
+    </div>
+  </body>
+</html>

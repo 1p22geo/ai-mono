@@ -1,39 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script defer src="./chat.js"></script>
     <title>Checkm8 | chat</title>
   </head>
-  <body class="w-screen bg-blue-100 h-content flex flex-row pb-16 mb-16 accent-blue-600">
+  <body
+    class="w-screen bg-blue-100 h-content flex flex-row pb-16 mb-16 accent-blue-600"
+  >
     <div id="nav" class="flex flex-col w-[50px] p-8 gap-4">
-      <a href="./chat.html" class="w-12 h-12 bg-blue-600 rounded-sm grid place-content-center">C</a>
-      <a href="./language.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">L</a>
-      <a href="./sentiment.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">S</a>
-      <a href="./marketing.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">M</a>
-      <a href="./custom.html" class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center">W</a>
+      <a
+        href="./chat.html"
+        class="w-12 h-12 bg-blue-600 rounded-sm grid place-content-center"
+        >C</a
+      >
+      <a
+        href="./language.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >L</a
+      >
+      <a
+        href="./sentiment.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >S</a
+      >
+      <a
+        href="./marketing.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >M</a
+      >
+      <a
+        href="./custom.html"
+        class="w-12 h-12 bg-blue-300 rounded-sm grid place-content-center"
+        >W</a
+      >
     </div>
-  <div id="settings" class="flex flex-col w-[15%] p-8 gap-4">
-      <div class="w-12 h-12 outline grid place-content-center cursor-pointer" id="reset">reset</div>
+    <div id="settings" class="flex flex-col w-[15%] p-8 gap-4">
+      <div
+        class="w-12 h-12 outline grid place-content-center cursor-pointer"
+        id="reset"
+      >
+        reset
+      </div>
       <h2 class="text-lg">Username</h2>
-      <input type="text" name="username" value="Guest">
+      <input type="text" name="username" value="Guest" />
       <h2 class="text-lg">Model type</h2>
       <div class="flex flex-col items-start gap-2">
-        <label for="model_casual" class="flex flex-row items-center gap-1 font-sans">
-          <input type="radio" name="model" value="casual" id="model_casual" class="sr-only peer" checked>
-          <div class="w-6 h-6 bg-white rounded-full peer-checked:bg-sky-600"></div>
+        <label
+          for="model_casual"
+          class="flex flex-row items-center gap-1 font-sans"
+        >
+          <input
+            type="radio"
+            name="model"
+            value="casual"
+            id="model_casual"
+            class="sr-only peer"
+            checked
+          />
+          <div
+            class="w-6 h-6 bg-white rounded-full peer-checked:bg-sky-600"
+          ></div>
           Casual
         </label>
-        <label for="model_professional" class="flex flex-row items-center gap-1 font-serif">
-          <input type="radio" name="model" value="professional" id="model_professional" class="sr-only peer">
-          <div class="w-6 h-6 bg-white rounded-full peer-checked:bg-emerald-600"></div>
+        <label
+          for="model_professional"
+          class="flex flex-row items-center gap-1 font-serif"
+        >
+          <input
+            type="radio"
+            name="model"
+            value="professional"
+            id="model_professional"
+            class="sr-only peer"
+          />
+          <div
+            class="w-6 h-6 bg-white rounded-full peer-checked:bg-emerald-600"
+          ></div>
           Professional
         </label>
-        <label for="model_creative" class="flex flex-row items-center gap-1 font-mono">
-          <input type="radio" name="model" value="creative" id="model_creative" class="sr-only peer">
-          <div class="w-6 h-6 bg-white rounded-full peer-checked:bg-pink-600"></div>
+        <label
+          for="model_creative"
+          class="flex flex-row items-center gap-1 font-mono"
+        >
+          <input
+            type="radio"
+            name="model"
+            value="creative"
+            id="model_creative"
+            class="sr-only peer"
+          />
+          <div
+            class="w-6 h-6 bg-white rounded-full peer-checked:bg-pink-600"
+          ></div>
           Creative
         </label>
       </div>
@@ -50,10 +111,7 @@
         value=""
         class="ml-4 outline-none w-[600px] rounded-l-full p-2 px-8"
       />
-      <button
-        id="send"
-        class="bg-blue-600 text-white p-2 px-4 rounded-r-full"
-      >
+      <button id="send" class="bg-blue-600 text-white p-2 px-4 rounded-r-full">
         Send
       </button>
     </div>

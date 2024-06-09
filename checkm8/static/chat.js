@@ -1,34 +1,34 @@
-let user="Guest"
+let user = "Guest";
 
-let history = []
+let history = [];
 
-let model_type = "casual"
+let model_type = "casual";
 
-function clear_history(){
-  Array.from(document.querySelectorAll(".chat")).forEach(e=>{
-    e.remove()
-  })
-  history = []
+function clear_history() {
+  Array.from(document.querySelectorAll(".chat")).forEach((e) => {
+    e.remove();
+  });
+  history = [];
 }
-document.querySelector("#reset").onclick = clear_history
+document.querySelector("#reset").onclick = clear_history;
 
-Array.from(document.querySelectorAll("[name=model]")).forEach(e=>{
-  e.onclick = ()=>{
-    model_type = e.value
-    clear_history()
-  }
-})
-document.querySelector("[name=username]").onchange=()=>{
-  user = document.querySelector("[name=username]").value
-  clear_history()
-}
+Array.from(document.querySelectorAll("[name=model]")).forEach((e) => {
+  e.onclick = () => {
+    model_type = e.value;
+    clear_history();
+  };
+});
+document.querySelector("[name=username]").onchange = () => {
+  user = document.querySelector("[name=username]").value;
+  clear_history();
+};
 
 document.querySelector("#send").onclick = async () => {
   const prompt = document.querySelector("#q").value;
   history.push({
-    "actor":"user",
-    "content":prompt
-  })
+    actor: "user",
+    content: prompt,
+  });
   document.querySelector("#q").value = "";
 
   document.querySelector("#spinner").classList.toggle("hidden");
@@ -46,12 +46,12 @@ document.querySelector("#send").onclick = async () => {
   const req = await fetch("/api/chat", {
     body: JSON.stringify({
       history,
-      user:{
-        uname:user
+      user: {
+        uname: user,
       },
-      settings:{
-        behavior:model_type
-      }
+      settings: {
+        behavior: model_type,
+      },
     }),
     method: "POST",
     headers: {
@@ -68,9 +68,9 @@ document.querySelector("#send").onclick = async () => {
   const answer_div = document.createElement("div");
   answer_div.innerText = res.answer;
   history.push({
-    "actor":"Checkm8",
-    "content": res.answer
-  })
+    actor: "Checkm8",
+    content: res.answer,
+  });
   r_div.appendChild(a_div);
   r_div.appendChild(answer_div);
 

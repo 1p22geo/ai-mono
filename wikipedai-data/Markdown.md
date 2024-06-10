@@ -22,22 +22,22 @@ and test suite for Markdown.[6]
 ## History
 
 Markdown was inspired by pre-existing
-[conventions](Convention_(norm) "wikilink") for marking up [plain
+[conventions](<Convention_(norm)> "wikilink") for marking up [plain
 text](plain_text "wikilink") in [email](email "wikilink") and
 [usenet](usenet "wikilink") posts, such as the earlier markup languages
 [setext](setext "wikilink") (),
-[Textile](Textile_(markup_language) "wikilink") (c. 2002), and
+[Textile](<Textile_(markup_language)> "wikilink") (c. 2002), and
 [reStructuredText](reStructuredText "wikilink") (c. 2002).[7]
 
 In 2002 [Aaron Swartz](Aaron_Swartz "wikilink") created
-[atx](atx_(markup_language) "wikilink") and referred to it as "the true
+[atx](<atx_(markup_language)> "wikilink") and referred to it as "the true
 structured text format". Gruber and Swartz[8][9] created the Markdown
 language in 2004, with the goal of enabling people "to write using an
 easy-to-read and easy-to-write plain text format, optionally convert it
 to structurally valid [XHTML](XHTML "wikilink") (or
 [HTML](HTML "wikilink"))."[10]
 
-Its key design goal was *readability*, that the language be readable
+Its key design goal was _readability_, that the language be readable
 as-is, without looking like it has been marked up with tags or
 formatting instructions, unlike text formatted with 'heavier' [markup
 languages](markup_language "wikilink"), such as [Rich Text
@@ -83,7 +83,7 @@ them for implementation-specific extensions.[19]
 
 From 2012, a group of people, including [Jeff
 Atwood](Jeff_Atwood "wikilink") and [John
-MacFarlane](John_MacFarlane_(philosopher) "wikilink"), launched what
+MacFarlane](<John_MacFarlane_(philosopher)> "wikilink"), launched what
 Atwood characterised as a standardisation effort.[20] A community
 website now aims to "document various tools and resources available to
 document authors and developers, as well as implementors of the various
@@ -94,27 +94,27 @@ specification, reference implementation, test suite, and "\[plans\] to
 announce a finalized 1.0 spec and test suite in 2019."[24] No 1.0 spec
 has since been released as major issues still remain unsolved.[25]
 Nonetheless, the following websites and projects have adopted
-CommonMark: [Discourse](Discourse_(software) "wikilink"),
+CommonMark: [Discourse](<Discourse_(software)> "wikilink"),
 [GitHub](GitHub "wikilink"), [GitLab](GitLab "wikilink"),
-[Reddit](Reddit "wikilink"), [Qt](Qt_(software) "wikilink"), [Stack
+[Reddit](Reddit "wikilink"), [Qt](<Qt_(software)> "wikilink"), [Stack
 Exchange](Stack_Exchange "wikilink") ([Stack
 Overflow](Stack_Overflow "wikilink")), and
-[Swift](Swift_(programming_language) "wikilink").
+[Swift](<Swift_(programming_language)> "wikilink").
 
 In March 2016 two relevant informational Internet
 [RFCs](Request_for_Comments "wikilink") were published:
 
--   introduced [MIME](MIME "wikilink") type <small></small>.
+- introduced [MIME](MIME "wikilink") type <small></small>.
 
--   discussed and registered the variants
-    [MultiMarkdown](MultiMarkdown "wikilink"), GitHub Flavored Markdown
-    (GFM), [Pandoc](Pandoc "wikilink"), and Markdown Extra among
-    others.[26]
+- discussed and registered the variants
+  [MultiMarkdown](MultiMarkdown "wikilink"), GitHub Flavored Markdown
+  (GFM), [Pandoc](Pandoc "wikilink"), and Markdown Extra among
+  others.[26]
 
 ## Variants
 
 Websites like [Bitbucket](Bitbucket "wikilink"),
-[Diaspora](Diaspora_(social_network) "wikilink"),
+[Diaspora](<Diaspora_(social_network)> "wikilink"),
 [GitHub](GitHub "wikilink"),[27]
 [OpenStreetMap](OpenStreetMap "wikilink"),
 [Reddit](Reddit "wikilink"),[28]
@@ -136,8 +136,8 @@ auto-linking references to commits, issues, usernames, etc. In 2017,
 GitHub released a formal specification of its GitHub Flavored Markdown
 (GFM) that is based on CommonMark.[34] It is a [strict
 superset](Superset "wikilink") of CommonMark, following its
-specification exactly except for *tables, strikethrough, autolinks and
-task lists,* which GFM adds as extensions.[35] Accordingly, GitHub also
+specification exactly except for _tables, strikethrough, autolinks and
+task lists,_ which GFM adds as extensions.[35] Accordingly, GitHub also
 changed the parser used on their sites, which required that some
 documents be changed. For instance, GFM now requires that the [hash
 symbol](number_sign "wikilink") that creates a heading be separated from
@@ -148,39 +148,39 @@ the heading text by a space character.
 Markdown Extra is a [lightweight markup
 language](lightweight_markup_language "wikilink") based on Markdown
 implemented in [PHP](PHP "wikilink") (originally),
-[Python](Python_(programming_language) "wikilink") and
-[Ruby](Ruby_(programming_language) "wikilink").[36] It adds the
+[Python](<Python_(programming_language)> "wikilink") and
+[Ruby](<Ruby_(programming_language)> "wikilink").[36] It adds the
 following features that are not available with regular Markdown:
 
--   Markdown markup inside [HTML](HTML "wikilink") blocks
--   Elements with id/class attribute
--   "Fenced code blocks" that span multiple lines of code
--   Tables[37]
--   Definition lists
--   Footnotes
--   Abbreviations
+- Markdown markup inside [HTML](HTML "wikilink") blocks
+- Elements with id/class attribute
+- "Fenced code blocks" that span multiple lines of code
+- Tables[37]
+- Definition lists
+- Footnotes
+- Abbreviations
 
 Markdown Extra is supported in some [content management
 systems](content_management_system "wikilink") such as
-[Drupal](Drupal "wikilink"),[38] [Grav (CMS)](Grav_(CMS) "wikilink") and
+[Drupal](Drupal "wikilink"),[38] [Grav (CMS)](<Grav_(CMS)> "wikilink") and
 [TYPO3](TYPO3 "wikilink").[39]
 
 ### LiaScript
 
 LiaScript[40] is a Markdown dialect that was designed to create
 interactive educational content. It is implemented in
-[Elm](Elm_(programming_language) "wikilink") and
+[Elm](<Elm_(programming_language)> "wikilink") and
 [TypeScript](TypeScript "wikilink") and adds additional syntax elements
 to define features like:
 
--   Animations
--   Automatic speech output
--   Mathematical formulas (using [KaTeX](KaTeX "wikilink"))
--   [ASCII art](ASCII_art "wikilink") diagrams
--   Various types of quizzes and surveys
--   [JavaScript](JavaScript "wikilink") is natively supported and can be
-    attached to various elements, this way code fragments can be made
-    executable and editable
+- Animations
+- Automatic speech output
+- Mathematical formulas (using [KaTeX](KaTeX "wikilink"))
+- [ASCII art](ASCII_art "wikilink") diagrams
+- Various types of quizzes and surveys
+- [JavaScript](JavaScript "wikilink") is natively supported and can be
+  attached to various elements, this way code fragments can be made
+  executable and editable
 
 ## Examples
 
@@ -323,7 +323,7 @@ Implementations of Markdown are available for over a dozen [programming
 languages](programming_language "wikilink"); in addition, many
 applications, platforms and [frameworks](Software_framework "wikilink")
 support Markdown.[41] For example, Markdown
-[plugins](Plug-in_(computing) "wikilink") exist for every major
+[plugins](<Plug-in_(computing)> "wikilink") exist for every major
 [blogging](blog "wikilink") platform.[42]
 
 While Markdown is a minimal markup language and is read and edited with
@@ -339,81 +339,81 @@ side-by-side preview window or render the code directly in a
 Some apps, services and editors support Markdown as an editing format,
 including:
 
--   [Bugzilla](Bugzilla "wikilink") uses a customized version of
-    Markdown.[43]
--   [ChatGPT](ChatGPT "wikilink"): Output from the AI model formatted in
-    Markdown will be rendered in LaTeX and HTML by the ChatGPT client,
-    and the model is encouraged to use Markdown to format its output.
-    Markdown provided by the user will not be formatted by the client,
-    but will still be passed to the AI model unaltered.
--   [Discord](Discord_(software) "wikilink"): chat messages[44]
--   [Discourse](Discourse_(software) "wikilink") uses the CommonMark
-    flavor of Markdown in the forum post composer.
--   [Doxygen](Doxygen "wikilink"): a source code documentation generator
-    which supports Markdown with extra features[45]
--   [GitHub](GitHub "wikilink") Flavored Markdown (GFM) ignores
-    underscores in words, and adds [syntax
-    highlighting](syntax_highlighting "wikilink"), [task
-    lists](task_list "wikilink"),[46] and tables[47]
--   The [GNOME Evolution](GNOME_Evolution "wikilink") email client
-    supports composing messages in Markdown format,[48] with the ability
-    to send and render emails in pure Markdown format
-    (`Content-Type: text/markdown;`) or to convert Markdown to
-    [plaintext](plaintext "wikilink") or [HTML
-    email](HTML_email "wikilink") when sending.
--   [Joplin](Joplin_(software) "wikilink"): a note-taking application
-    that supports markdown formatting[49]
--   [JotterPad](JotterPad "wikilink"): an online WYSIWYG editor that
-    supports Markdown and Fountain[50]
--   [Kanboard](Kanboard "wikilink") uses the standard Markdown syntax as
-    its only formatting syntax for task descriptions.[51]
--   [Microsoft Azure DevOps](Microsoft_Azure_DevOps "wikilink")' wiki
-    feature has its own implementation[52]
--   [Microsoft Teams](Microsoft_Teams "wikilink"): chat messages[53]
--   [Misskey](Misskey "wikilink"), its numerous forks and other
-    [Fediverse](Fediverse "wikilink") platforms such as
-    [Akkoma](Akkoma "wikilink")[54] use a custom text format
-    misleadingly called "Misskey-Flavored Markdown (MFM)", with support
-    for standard nestable block quotes `>` and inline emphasis `` _*` ``
-    as well as extensions seen elsewhere for `@` mentions, `#` tags,
-    custom [emoji](emoji "wikilink") `:foo:`, automatic URL detection
-    and toggleable link target preview, but no support for headings,
-    lists, reference links and other standard Markdown features. It
-    supports a handful of HTML-like tags (`<small> <center; <plain>`)
-    and a special notation with English keywords or key-value pairs
-    `$[`*`key=value`*` `*`content`*`]` for spans with stylistic effects
-    applied, e.g. fonts, blurs, borders and transformations such as
-    flipping, shifting, rotating, scaling and animation, but also for
-    [furigana](furigana "wikilink") and search boxes.[55] The message
-    format of such [ActivityPub](ActivityPub "wikilink") objects that
-    can be consumed as messages is `text/x.misskeymarkdown`.
--   The [Mozilla Thunderbird](Mozilla_Thunderbird "wikilink") email
-    client supports Markdown through the "[Markdown here
-    Revival](https://addons.thunderbird.net/en-US/thunderbird/addon/markdown-here-revival/)"
-    add-on.
--   [Nextcloud Notes](Nextcloud "wikilink"): the default app for taking
-    notes on the Nextcloud platform supports formatting using
-    Markdown[56]
--   [Obsidian](Obsidian_(software) "wikilink") is note-taking software
-    based on Markdown files.[57]
--   [RMarkdown](RMarkdown "wikilink")[58]
--   [RStudio](RStudio "wikilink"): an
-    [IDE](Integrated_development_environment "wikilink") for
-    [R](R_(programming_language) "wikilink"). It provides a
-    [C++](C++ "wikilink") [wrapper
-    function](wrapper_function "wikilink") for a markdown variant called
-    sundown[59]
--   [Simplenote](Simplenote "wikilink")[60]
+- [Bugzilla](Bugzilla "wikilink") uses a customized version of
+  Markdown.[43]
+- [ChatGPT](ChatGPT "wikilink"): Output from the AI model formatted in
+  Markdown will be rendered in LaTeX and HTML by the ChatGPT client,
+  and the model is encouraged to use Markdown to format its output.
+  Markdown provided by the user will not be formatted by the client,
+  but will still be passed to the AI model unaltered.
+- [Discord](<Discord_(software)> "wikilink"): chat messages[44]
+- [Discourse](<Discourse_(software)> "wikilink") uses the CommonMark
+  flavor of Markdown in the forum post composer.
+- [Doxygen](Doxygen "wikilink"): a source code documentation generator
+  which supports Markdown with extra features[45]
+- [GitHub](GitHub "wikilink") Flavored Markdown (GFM) ignores
+  underscores in words, and adds [syntax
+  highlighting](syntax_highlighting "wikilink"), [task
+  lists](task_list "wikilink"),[46] and tables[47]
+- The [GNOME Evolution](GNOME_Evolution "wikilink") email client
+  supports composing messages in Markdown format,[48] with the ability
+  to send and render emails in pure Markdown format
+  (`Content-Type: text/markdown;`) or to convert Markdown to
+  [plaintext](plaintext "wikilink") or [HTML
+  email](HTML_email "wikilink") when sending.
+- [Joplin](<Joplin_(software)> "wikilink"): a note-taking application
+  that supports markdown formatting[49]
+- [JotterPad](JotterPad "wikilink"): an online WYSIWYG editor that
+  supports Markdown and Fountain[50]
+- [Kanboard](Kanboard "wikilink") uses the standard Markdown syntax as
+  its only formatting syntax for task descriptions.[51]
+- [Microsoft Azure DevOps](Microsoft_Azure_DevOps "wikilink")' wiki
+  feature has its own implementation[52]
+- [Microsoft Teams](Microsoft_Teams "wikilink"): chat messages[53]
+- [Misskey](Misskey "wikilink"), its numerous forks and other
+  [Fediverse](Fediverse "wikilink") platforms such as
+  [Akkoma](Akkoma "wikilink")[54] use a custom text format
+  misleadingly called "Misskey-Flavored Markdown (MFM)", with support
+  for standard nestable block quotes `>` and inline emphasis `` _*` ``
+  as well as extensions seen elsewhere for `@` mentions, `#` tags,
+  custom [emoji](emoji "wikilink") `:foo:`, automatic URL detection
+  and toggleable link target preview, but no support for headings,
+  lists, reference links and other standard Markdown features. It
+  supports a handful of HTML-like tags (`<small> <center; <plain>`)
+  and a special notation with English keywords or key-value pairs
+  `$[`_`key=value`_` `_`content`_`]` for spans with stylistic effects
+  applied, e.g. fonts, blurs, borders and transformations such as
+  flipping, shifting, rotating, scaling and animation, but also for
+  [furigana](furigana "wikilink") and search boxes.[55] The message
+  format of such [ActivityPub](ActivityPub "wikilink") objects that
+  can be consumed as messages is `text/x.misskeymarkdown`.
+- The [Mozilla Thunderbird](Mozilla_Thunderbird "wikilink") email
+  client supports Markdown through the "[Markdown here
+  Revival](https://addons.thunderbird.net/en-US/thunderbird/addon/markdown-here-revival/)"
+  add-on.
+- [Nextcloud Notes](Nextcloud "wikilink"): the default app for taking
+  notes on the Nextcloud platform supports formatting using
+  Markdown[56]
+- [Obsidian](<Obsidian_(software)> "wikilink") is note-taking software
+  based on Markdown files.[57]
+- [RMarkdown](RMarkdown "wikilink")[58]
+- [RStudio](RStudio "wikilink"): an
+  [IDE](Integrated_development_environment "wikilink") for
+  [R](<R_(programming_language)> "wikilink"). It provides a
+  [C++](C++ "wikilink") [wrapper
+  function](wrapper_function "wikilink") for a markdown variant called
+  sundown[59]
+- [Simplenote](Simplenote "wikilink")[60]
 
 ## See also
 
--   [Comparison of document markup
-    languages](Comparison_of_document_markup_languages "wikilink")
--   [Comparison of documentation
-    generators](Comparison_of_documentation_generators "wikilink")
--   [Lightweight markup
-    language](Lightweight_markup_language "wikilink")
--   [Wiki markup](Wiki_markup "wikilink")
+- [Comparison of document markup
+  languages](Comparison_of_document_markup_languages "wikilink")
+- [Comparison of documentation
+  generators](Comparison_of_documentation_generators "wikilink")
+- [Lightweight markup
+  language](Lightweight_markup_language "wikilink")
+- [Wiki markup](Wiki_markup "wikilink")
 
 ## Explanatory notes
 
@@ -421,7 +421,7 @@ including:
 
 ## External links
 
--   for original John Gruber markup
+- for original John Gruber markup
 
 [Category:Computer-related introductions in
 2004](Category:Computer-related_introductions_in_2004 "wikilink")

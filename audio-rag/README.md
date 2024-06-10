@@ -33,6 +33,7 @@ Edit `native/src/constants.ts`, setting `ENDPOINT_URI` to the address of your en
 ## Build React Native app
 
 refer to [native/README.md](./native/README.md)
+
 ```shell
 cd native
 yarn install

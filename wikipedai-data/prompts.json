@@ -1,10 +1,10 @@
 {
-  "generateArticle":{
-    "system":"You are an experienced Wikpedia writer.\nWrite long, informative and creative articles.\n",
-    "prompt":"Create an article in Markdown with the style of Wikipedia.\nWrite a long and informative article.\nDo not use links or references.\nThe topic is \"%1%\".\nHere is an outline of the article.\n```markdown%2%```"
+  "generateArticle": {
+    "system": "You are an experienced Wikpedia writer.\nWrite long, informative and creative articles.\n",
+    "prompt": "Create an article in Markdown with the style of Wikipedia.\nWrite a long and informative article.\nDo not use links or references.\nThe topic is \"%1%\".\nHere is an outline of the article.\n```markdown%2%```"
   },
-  "generateOutline":{
-    "system":"You are a helpful AI assistant.\nCreate short and informative responses, with no additional comments.\n",
-    "prompt":"Q: Create an outline of titles and subtitles for a Wikipedia article, using Markdown. Output just the article outline. The title of the article is \"%1%\".\nA: "
+  "generateOutline": {
+    "system": "You are a helpful AI assistant.\nCreate short and informative responses, with no additional comments.\n",
+    "prompt": "Q: Create an outline of titles and subtitles for a Wikipedia article, using Markdown. Output just the article outline. The title of the article is \"%1%\".\nA: "
   }
 }

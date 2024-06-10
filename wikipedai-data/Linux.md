@@ -3,13 +3,13 @@
 [Unix-like](Unix-like "wikilink") [operating
 systems](operating_system "wikilink") based on the [Linux
 kernel](Linux_kernel "wikilink"),[2] an [operating system
-kernel](kernel_(operating_system) "wikilink") first released on
+kernel](<kernel_(operating_system)> "wikilink") first released on
 September 17, 1991, by [Linus
 Torvalds](Linus_Torvalds "wikilink").[3][4][5] Linux is typically
 [packaged](package_manager "wikilink") as a [Linux
 distribution](Linux_distribution "wikilink") (distro), which includes
 the kernel and supporting [system software](system_software "wikilink")
-and [libraries](library_(computing) "wikilink"), many of which are
+and [libraries](<library_(computing)> "wikilink"), many of which are
 provided by the [GNU Project](GNU_Project "wikilink"). Many Linux
 distributions use the word "Linux" in their name, but the [Free Software
 Foundation](Free_Software_Foundation "wikilink") uses and recommends the
@@ -25,14 +25,14 @@ Linux](Red_Hat_Enterprise_Linux "wikilink") and [SUSE Linux
 Enterprise](SUSE_Linux_Enterprise "wikilink"). Desktop Linux
 distributions include a [windowing system](windowing_system "wikilink")
 such as [X11](X_Window_System "wikilink") or
-[Wayland](Wayland_(protocol) "wikilink") and a [desktop
+[Wayland](<Wayland_(protocol)> "wikilink") and a [desktop
 environment](desktop_environment "wikilink") such as
 [GNOME](GNOME "wikilink") or [KDE Plasma](KDE_Plasma "wikilink").
-Distributions intended for [servers](server_(computing) "wikilink") may
+Distributions intended for [servers](<server_(computing)> "wikilink") may
 not have a [graphical user
 interface](graphical_user_interface "wikilink") at all, or include a
 [solution stack](solution_stack "wikilink") such as
-[LAMP](LAMP_(software_bundle) "wikilink"). Because Linux is freely
+[LAMP](<LAMP_(software_bundle)> "wikilink"). Because Linux is freely
 redistributable, anyone may create a distribution for any purpose.[11]
 
 Linux was originally developed for [personal
@@ -41,7 +41,7 @@ x86](Intel_x86 "wikilink") architecture, but has since been
 [ported](porting "wikilink") to more
 [platforms](computer_hardware_platforms "wikilink") than any other
 operating system.[12] Because of the dominance of Linux-based
-[Android](Android_(operating_system) "wikilink") on
+[Android](<Android_(operating_system)> "wikilink") on
 [smartphones](smartphone "wikilink"), Linux, including Android, has the
 [largest](Usage_share_of_operating_systems "wikilink") installed base of
 all [general-purpose operating
@@ -54,7 +54,7 @@ computers](desktop_computer "wikilink"),[16] the
 percent of sub-$300 [notebook](Laptop "wikilink") sales in the US.[17]
 Linux is the leading operating system on servers (over 96.4% of the top
 one million web servers' operating systems are Linux),[18] leads other
-[big iron](Big_iron_(computing) "wikilink") systems such as [mainframe
+[big iron](<Big_iron_(computing)> "wikilink") systems such as [mainframe
 computers](mainframe_computer "wikilink"), and is used on all of the
 [world's 500 fastest supercomputers](TOP500 "wikilink") (, having
 gradually displaced all competitors).[19][20][21]
@@ -62,7 +62,7 @@ gradually displaced all competitors).[19][20][21]
 Linux also runs on [embedded systems](embedded_system "wikilink"), i.e.,
 devices whose operating system is typically built into the
 [firmware](firmware "wikilink") and is highly tailored to the system.
-This includes [routers](router_(computing) "wikilink"),
+This includes [routers](<router_(computing)> "wikilink"),
 [automation](automation "wikilink") controls, [smart home
 devices](smart_home_technology "wikilink"), [video game
 consoles](video_game_console "wikilink"),[22]
@@ -72,7 +72,7 @@ TVs](Smart_TV "wikilink")),[23][24][25]
 Hyundai, and Toyota),[26] and [spacecraft](spacecraft "wikilink")
 ([Falcon 9](Falcon_9 "wikilink") rocket,
 [Dragon](SpaceX_Dragon_2 "wikilink") crew capsule, and the
-[*Perseverance*](Perseverance_(rover) "wikilink") rover).[27][28]
+[_Perseverance_](<Perseverance_(rover)> "wikilink") rover).[27][28]
 
 Linux is one of the most prominent examples of free and open-source
 [software](software "wikilink") collaboration. The [source
@@ -105,7 +105,7 @@ Ossanna](Joe_Ossanna "wikilink").[32] First released in 1971, Unix was
 written entirely in [assembly language](assembly_language "wikilink"),
 as was common practice at the time. In 1973, in a key pioneering
 approach, it was rewritten in the
-[C](C_(programming_language) "wikilink") programming language by Dennis
+[C](<C_(programming_language)> "wikilink") programming language by Dennis
 Ritchie (except for some hardware and I/O routines). The availability of
 a [high-level language](high-level_language "wikilink") implementation
 of Unix made its [porting](porting "wikilink") to different computer
@@ -147,12 +147,12 @@ General Public License](GNU_General_Public_License "wikilink") (GNU GPL)
 in 1989. By the early 1990s, many of the programs required in an
 operating system (such as libraries, [compilers](compiler "wikilink"),
 [text editors](text_editor "wikilink"), a [command-line
-shell](Shell_(computing)#Command-line_shells "wikilink"), and a
+shell](<Shell_(computing)#Command-line_shells> "wikilink"), and a
 [windowing system](windowing_system "wikilink")) were completed,
 although low-level elements such as [device
 drivers](device_driver "wikilink"),
-[daemons](daemon_(computing) "wikilink"), and the
-[kernel](kernel_(operating_system) "wikilink"), called [GNU
+[daemons](<daemon_(computing)> "wikilink"), and the
+[kernel](<kernel_(operating_system)> "wikilink"), called [GNU
 Hurd](GNU_Hurd "wikilink"), were stalled and incomplete.[39]
 
 [MINIX](MINIX "wikilink") was created by [Andrew S.
@@ -180,8 +180,8 @@ Helsinki](University_of_Helsinki "wikilink") in the fall of 1990,
 Torvalds enrolled in a Unix course.[43] The course used a
 [MicroVAX](MicroVAX "wikilink") minicomputer running
 [Ultrix](Ultrix "wikilink"), and one of the required texts was
-*[Operating Systems: Design and
-Implementation](Operating_Systems:_Design_and_Implementation "wikilink")*
+_[Operating Systems: Design and
+Implementation](Operating_Systems:_Design_and_Implementation "wikilink")_
 by [Andrew S. Tanenbaum](Andrew_S._Tanenbaum "wikilink"). This textbook
 included a copy of Tanenbaum's [MINIX](MINIX "wikilink") operating
 system. It was with this course that Torvalds first became exposed to
@@ -194,7 +194,7 @@ On July 3, 1991, to implement Unix [system
 calls](system_call "wikilink"), Linus Torvalds attempted unsuccessfully
 to obtain a digital copy of the [POSIX](POSIX "wikilink") standards
 [documentation](Software_documentation "wikilink") with a request to the
-*comp.os.minix* [newsgroup](Usenet_newsgroup "wikilink").[46] After not
+_comp.os.minix_ [newsgroup](Usenet_newsgroup "wikilink").[46] After not
 finding the POSIX documentation, Torvalds initially resorted to
 determining system calls from [SunOS](SunOS "wikilink") documentation
 owned by the university for use in operating its [Sun
@@ -244,7 +244,7 @@ According to a [newsgroup](Usenet_newsgroup "wikilink") post by
 Torvalds,[52] the word "Linux" should be pronounced ( ) with a short 'i'
 as in 'print' and 'u' as in 'put'. To further demonstrate how the word
 "Linux" should be pronounced, he included an audio guide with the kernel
-source code.[53] However, in this recording, he pronounces Linux as **
+source code.[53] However, in this recording, he pronounces Linux as \*\*
 () with a short but [close front unrounded
 vowel](close_front_unrounded_vowel "wikilink"), instead of a [near-close
 near-front unrounded
@@ -257,7 +257,7 @@ newsgroup post.
 distribution](Ubuntu_23.10_Mantic_Minotaur_Desktop_English.png "Ubuntu, a popular Linux distribution")
 ![[Nexus 5X](Nexus_5X "wikilink") running
 [Android](Android_(operating_system) "wikilink")
-](Nexus_5X_(White).jpg "Nexus 5X running Android ")
+](<Nexus_5X_(White).jpg> "Nexus 5X running Android ")
 
 The adoption of Linux in production environments, rather than being used
 only by hobbyists, started to take off first in the mid-1990s in the
@@ -274,7 +274,7 @@ Today, Linux systems are used throughout computing, from [embedded
 systems](embedded_system "wikilink") to virtually all
 [supercomputers](supercomputer "wikilink"),[55][56] and have secured a
 place in server installations such as the popular
-[LAMP](LAMP_(software_bundle) "wikilink") application stack. The use of
+[LAMP](<LAMP_(software_bundle)> "wikilink") application stack. The use of
 Linux distributions in home and enterprise desktops has been
 growing.[57][58][59][60][61][62][63] Linux distributions have also
 become popular in the [netbook](netbook "wikilink") market, with many
@@ -362,13 +362,13 @@ collection of programming tools vital to Linux development (including
 the [compilers](GNU_Compiler_Collection "wikilink") used to build the
 Linux kernel itself), and the [coreutils](GNU_Core_Utilities "wikilink")
 implement many basic [Unix tools](List_of_Unix_commands "wikilink"). The
-GNU Project also develops [Bash](Bash_(Unix_shell) "wikilink"), a
+GNU Project also develops [Bash](<Bash_(Unix_shell)> "wikilink"), a
 popular [CLI](Command-line_interface "wikilink") shell. The [graphical
 user interface](graphical_user_interface "wikilink") (or GUI) used by
 most Linux systems is built on top of an implementation of the [X Window
 System](X_Window_System "wikilink").[73] More recently, the Linux
 community has sought to advance to
-[Wayland](Wayland_(protocol) "wikilink") as the new display server
+[Wayland](<Wayland_(protocol)> "wikilink") as the new display server
 protocol, in place of X11. Many other open-source software projects
 contribute to Linux systems.
 
@@ -382,78 +382,78 @@ contribute to Linux systems.
 
 Installed components of a Linux system include the following:[74][75]
 
--   A [bootloader](bootloader "wikilink"), for example [GNU
-    GRUB](GNU_GRUB "wikilink"), [LILO](LILO_(bootloader) "wikilink"),
-    [SYSLINUX](SYSLINUX "wikilink") or
-    [systemd-boot](systemd-boot "wikilink"). This is a program that
-    loads the Linux kernel into the computer's [main
-    memory](main_memory "wikilink"), by being executed by the computer
-    when it is turned on and after the [firmware](firmware "wikilink")
-    initialization is performed.
--   An [init](init "wikilink") program, such as the traditional
-    [sysvinit](sysvinit "wikilink") and the newer
-    [systemd](systemd "wikilink"), [OpenRC](OpenRC "wikilink") and
-    [Upstart](Upstart_(software) "wikilink"). This is the first
-    [process](Process_(computing) "wikilink") launched by the Linux
-    kernel, and is at the root of the process tree. It starts processes
-    such as system services and login prompts (whether graphical or in
-    terminal mode).
--   [Software libraries](Library_(computing) "wikilink"), which contain
-    code that can be used by running processes. On Linux systems using
-    [ELF](Executable_and_Linkable_Format "wikilink")-format executable
-    files, the [dynamic linker](dynamic_linker "wikilink") that manages
-    the use of dynamic libraries is known as
-    [ld-linux.so](ld-linux.so "wikilink"). If the system is set up for
-    the user to compile software themselves, [header
-    files](header_file "wikilink") will also be included to describe the
-    [programming interface](API "wikilink") of installed libraries.
-    Besides the most commonly used software library on Linux systems,
-    the [GNU C Library](GNU_C_Library "wikilink") (glibc), there are
-    numerous other libraries, such as
-    [SDL](Simple_DirectMedia_Layer "wikilink") and
-    [Mesa](Mesa_(computer_graphics) "wikilink").
-    -   The [C standard library](C_standard_library "wikilink") is the
-        library necessary to run programs written in
-        [C](C_(programming_language) "wikilink") on a computer system,
-        with the GNU C Library being the standard. It provides an
-        implementation of the POSIX API, as well as extensions to that
-        API. For embedded systems, alternatives such as
-        [musl](musl "wikilink"), [EGLIBC](EGLIBC "wikilink") (a glibc
-        fork once used by Debian) and [uClibc](uClibc "wikilink") (which
-        was designed for [uClinux](uClinux "wikilink")) have been
-        developed, although the last two are no longer maintained.
-        Android uses its own C library,
-        [Bionic](Bionic_(software) "wikilink"). However, musl can
-        additionally be used as a replacement for glibc on desktop and
-        laptop systems, as seen on certain Linux distributions like
-        [Void Linux](Void_Linux "wikilink").
--   Basic Unix commands, with GNU coreutils being the standard
-    implementation. Alternatives exist for embedded systems, such as the
-    copyleft [BusyBox](BusyBox "wikilink"), and the BSD-licensed
-    [Toybox](Toybox "wikilink").
--   [Widget toolkits](Widget_toolkit "wikilink") are the libraries used
-    to build [graphical user
-    interfaces](graphical_user_interface "wikilink") (GUIs) for software
-    applications. Numerous widget toolkits are available, including
-    [GTK](GTK "wikilink") and [Clutter](Clutter_(software) "wikilink")
-    developed by the [GNOME Project](GNOME_Project "wikilink"),
-    [Qt](Qt_(software) "wikilink") developed by the [Qt
-    Project](Qt_Project "wikilink") and led by [The Qt
-    Company](The_Qt_Company "wikilink"), and [Enlightenment Foundation
-    Libraries](Enlightenment_Foundation_Libraries "wikilink") (EFL)
-    developed primarily by the
-    [Enlightenment](Enlightenment_(software) "wikilink") team.
--   A [package management system](package_manager "wikilink"), such as
-    [dpkg](dpkg "wikilink") and [RPM](RPM_Package_Manager "wikilink").
-    Alternatively packages can be compiled from binary or source
-    [tarballs](Tar_(computing) "wikilink").
--   User interface programs such as command shells or windowing
-    environments.
+- A [bootloader](bootloader "wikilink"), for example [GNU
+  GRUB](GNU_GRUB "wikilink"), [LILO](<LILO_(bootloader)> "wikilink"),
+  [SYSLINUX](SYSLINUX "wikilink") or
+  [systemd-boot](systemd-boot "wikilink"). This is a program that
+  loads the Linux kernel into the computer's [main
+  memory](main_memory "wikilink"), by being executed by the computer
+  when it is turned on and after the [firmware](firmware "wikilink")
+  initialization is performed.
+- An [init](init "wikilink") program, such as the traditional
+  [sysvinit](sysvinit "wikilink") and the newer
+  [systemd](systemd "wikilink"), [OpenRC](OpenRC "wikilink") and
+  [Upstart](<Upstart_(software)> "wikilink"). This is the first
+  [process](<Process_(computing)> "wikilink") launched by the Linux
+  kernel, and is at the root of the process tree. It starts processes
+  such as system services and login prompts (whether graphical or in
+  terminal mode).
+- [Software libraries](<Library_(computing)> "wikilink"), which contain
+  code that can be used by running processes. On Linux systems using
+  [ELF](Executable_and_Linkable_Format "wikilink")-format executable
+  files, the [dynamic linker](dynamic_linker "wikilink") that manages
+  the use of dynamic libraries is known as
+  [ld-linux.so](ld-linux.so "wikilink"). If the system is set up for
+  the user to compile software themselves, [header
+  files](header_file "wikilink") will also be included to describe the
+  [programming interface](API "wikilink") of installed libraries.
+  Besides the most commonly used software library on Linux systems,
+  the [GNU C Library](GNU_C_Library "wikilink") (glibc), there are
+  numerous other libraries, such as
+  [SDL](Simple_DirectMedia_Layer "wikilink") and
+  [Mesa](<Mesa_(computer_graphics)> "wikilink").
+  - The [C standard library](C_standard_library "wikilink") is the
+    library necessary to run programs written in
+    [C](<C_(programming_language)> "wikilink") on a computer system,
+    with the GNU C Library being the standard. It provides an
+    implementation of the POSIX API, as well as extensions to that
+    API. For embedded systems, alternatives such as
+    [musl](musl "wikilink"), [EGLIBC](EGLIBC "wikilink") (a glibc
+    fork once used by Debian) and [uClibc](uClibc "wikilink") (which
+    was designed for [uClinux](uClinux "wikilink")) have been
+    developed, although the last two are no longer maintained.
+    Android uses its own C library,
+    [Bionic](<Bionic_(software)> "wikilink"). However, musl can
+    additionally be used as a replacement for glibc on desktop and
+    laptop systems, as seen on certain Linux distributions like
+    [Void Linux](Void_Linux "wikilink").
+- Basic Unix commands, with GNU coreutils being the standard
+  implementation. Alternatives exist for embedded systems, such as the
+  copyleft [BusyBox](BusyBox "wikilink"), and the BSD-licensed
+  [Toybox](Toybox "wikilink").
+- [Widget toolkits](Widget_toolkit "wikilink") are the libraries used
+  to build [graphical user
+  interfaces](graphical_user_interface "wikilink") (GUIs) for software
+  applications. Numerous widget toolkits are available, including
+  [GTK](GTK "wikilink") and [Clutter](<Clutter_(software)> "wikilink")
+  developed by the [GNOME Project](GNOME_Project "wikilink"),
+  [Qt](<Qt_(software)> "wikilink") developed by the [Qt
+  Project](Qt_Project "wikilink") and led by [The Qt
+  Company](The_Qt_Company "wikilink"), and [Enlightenment Foundation
+  Libraries](Enlightenment_Foundation_Libraries "wikilink") (EFL)
+  developed primarily by the
+  [Enlightenment](<Enlightenment_(software)> "wikilink") team.
+- A [package management system](package_manager "wikilink"), such as
+  [dpkg](dpkg "wikilink") and [RPM](RPM_Package_Manager "wikilink").
+  Alternatively packages can be compiled from binary or source
+  [tarballs](<Tar_(computing)> "wikilink").
+- User interface programs such as command shells or windowing
+  environments.
 
 ### User interface
 
 The [user interface](user_interface "wikilink"), also known as the
-[shell](shell_(computing) "wikilink"), is either a command-line
+[shell](<shell_(computing)> "wikilink"), is either a command-line
 interface (CLI), a graphical user interface (GUI), or controls attached
 to the associated hardware, which is common for embedded systems. For
 desktop systems, the default user interface is usually graphical,
@@ -463,9 +463,9 @@ emulator](terminal_emulator "wikilink") windows or on a separate
 
 CLI shells are text-based user interfaces, which use text for both input
 and output. The dominant shell used in Linux is the [Bourne-Again
-Shell](bash_(Unix_shell) "wikilink") (bash), originally developed for
+Shell](<bash_(Unix_shell)> "wikilink") (bash), originally developed for
 the GNU Project. Most low-level Linux components, including various
-parts of the [userland](Userland_(computing) "wikilink"), use the CLI
+parts of the [userland](<Userland_(computing)> "wikilink"), use the CLI
 exclusively. The CLI is particularly suited for automation of repetitive
 or delayed tasks and provides very simple [inter-process
 communication](inter-process_communication "wikilink").
@@ -474,8 +474,8 @@ On desktop systems, the most popular user interfaces are the [GUI
 shells](GUI_shell "wikilink"), packaged together with extensive desktop
 environments, such as [KDE Plasma](KDE_Plasma_5 "wikilink"),
 [GNOME](GNOME "wikilink"),
-[MATE](MATE_(desktop_environment) "wikilink"),
-[Cinnamon](Cinnamon_(desktop_environment) "wikilink"),
+[MATE](<MATE_(desktop_environment)> "wikilink"),
+[Cinnamon](<Cinnamon_(desktop_environment)> "wikilink"),
 [LXDE](LXDE "wikilink"), [Pantheon](Elementary_OS "wikilink"), and
 [Xfce](Xfce "wikilink"), though a variety of additional user interfaces
 exist. Most popular user interfaces are based on the X Window System,
@@ -502,16 +502,16 @@ provide means to control the placement and appearance of individual
 application windows, and interact with the X Window System. Simpler [X
 window managers](X_window_manager "wikilink") such as
 [dwm](dwm "wikilink"), [ratpoison](ratpoison "wikilink"), or
-[i3wm](i3_(window_manager) "wikilink") provide a
-[minimalist](Minimalism_(computing) "wikilink") functionality, while
+[i3wm](<i3_(window_manager)> "wikilink") provide a
+[minimalist](<Minimalism_(computing)> "wikilink") functionality, while
 more elaborate window managers such as [FVWM](FVWM "wikilink"),
-[Enlightenment](Enlightenment_(software) "wikilink"), or [Window
+[Enlightenment](<Enlightenment_(software)> "wikilink"), or [Window
 Maker](Window_Maker "wikilink") provide more features such as a built-in
 [taskbar](taskbar "wikilink") and
-[themes](theme_(computing) "wikilink"), but are still lightweight when
+[themes](<theme_(computing)> "wikilink"), but are still lightweight when
 compared to desktop environments. Desktop environments include window
 managers as part of their standard installations, such as
-[Mutter](Mutter_(software) "wikilink") (GNOME), [KWin](KWin "wikilink")
+[Mutter](<Mutter_(software)> "wikilink") (GNOME), [KWin](KWin "wikilink")
 (KDE), or [Xfwm](Xfwm "wikilink") (xfce), although users may choose to
 use a different window manager if preferred.
 
@@ -584,9 +584,9 @@ and commercial entities. A distribution is responsible for the default
 configuration of the installed Linux kernel, general system security,
 and more generally integration of the different software packages into a
 coherent whole. Distributions typically use a package manager such as
-[apt](APT_(software) "wikilink"), [yum](yum_(software) "wikilink"),
-[zypper](ZYpp "wikilink"), [pacman](Pacman_(package_manager) "wikilink")
-or [portage](Portage_(software) "wikilink") to install, remove, and
+[apt](<APT_(software)> "wikilink"), [yum](<yum_(software)> "wikilink"),
+[zypper](ZYpp "wikilink"), [pacman](<Pacman_(package_manager)> "wikilink")
+or [portage](<Portage_(software)> "wikilink") to install, remove, and
 update all of a system's software from one central location.[88]
 
 ### Community
@@ -632,7 +632,7 @@ of the major corporations that provide contributions include
 [Google](Google "wikilink"), [AMD](AMD "wikilink"),
 [Oracle](Oracle_Corporation "wikilink"), and
 [Facebook](Facebook "wikilink").[94] Several corporations, notably Red
-Hat, [Canonical](Canonical_(company) "wikilink"), and
+Hat, [Canonical](<Canonical_(company)> "wikilink"), and
 [SUSE](SUSE_S.A. "wikilink") have built a significant business around
 Linux distributions.
 
@@ -667,22 +667,22 @@ building both Linux applications and operating system programs are found
 within the [GNU toolchain](GNU_toolchain "wikilink"), which includes the
 [GNU Compiler Collection](GNU_Compiler_Collection "wikilink") (GCC) and
 the [GNU Build System](GNU_Build_System "wikilink"). Amongst others, GCC
-provides compilers for [Ada](Ada_(programming_language) "wikilink"), C,
-[C++](C++ "wikilink"), [Go](Go_(programming_language) "wikilink") and
+provides compilers for [Ada](<Ada_(programming_language)> "wikilink"), C,
+[C++](C++ "wikilink"), [Go](<Go_(programming_language)> "wikilink") and
 [Fortran](Fortran "wikilink"). Many programming languages have a
 cross-platform reference implementation that supports Linux, for example
 [PHP](PHP "wikilink"), [Perl](Perl "wikilink"),
-[Ruby](Ruby_(programming_language) "wikilink"),
-[Python](Python_(programming_language) "wikilink"),
-[Java](Java_(programming_language) "wikilink"),
-[Go](Go_(programming_language) "wikilink"),
-[Rust](Rust_(programming_language) "wikilink") and
+[Ruby](<Ruby_(programming_language)> "wikilink"),
+[Python](<Python_(programming_language)> "wikilink"),
+[Java](<Java_(programming_language)> "wikilink"),
+[Go](<Go_(programming_language)> "wikilink"),
+[Rust](<Rust_(programming_language)> "wikilink") and
 [Haskell](Haskell "wikilink"). First released in 2003, the
 [LLVM](LLVM "wikilink") project provides an alternative cross-platform
 open-source compiler for many languages.
 [Proprietary](Proprietary_software "wikilink") compilers for Linux
 include the [Intel C++ Compiler](Intel_C++_Compiler "wikilink"), [Sun
-Studio](Sun_Studio_(software) "wikilink"), and [IBM XL C/C++
+Studio](<Sun_Studio_(software)> "wikilink"), and [IBM XL C/C++
 Compiler](IBM_XL_C/C++_Compilers "wikilink"). [BASIC](BASIC "wikilink")
 is available in [procedural](procedural_programming "wikilink") form
 from [QB64](QB64 "wikilink"), [PureBasic](PureBasic "wikilink"),
@@ -697,13 +697,13 @@ Object Basic](Phoenix_Object_Basic "wikilink"), [NS
 Basic](NS_Basic "wikilink"), [ProvideX](ProvideX "wikilink"), [Chipmunk
 Basic](Chipmunk_Basic "wikilink"), [RapidQ](RapidQ "wikilink") and
 [Xojo](Xojo "wikilink").
-[Pascal](Pascal_(programming_language) "wikilink") is implemented
+[Pascal](<Pascal_(programming_language)> "wikilink") is implemented
 through [GNU Pascal](GNU_Pascal "wikilink"), [Free
 Pascal](Free_Pascal "wikilink"), and [Virtual
 Pascal](Virtual_Pascal "wikilink"), as well as graphically via
-[Lazarus](Lazarus_(software) "wikilink"),
+[Lazarus](<Lazarus_(software)> "wikilink"),
 [PascalABC.NET](PascalABC.NET "wikilink"), or
-[Delphi](Delphi_(software) "wikilink") using
+[Delphi](<Delphi_(software)> "wikilink") using
 [FireMonkey](FireMonkey "wikilink") (previously through [Borland
 Kylix](Borland_Kylix "wikilink")).
 
@@ -712,11 +712,11 @@ specific-purpose programming languages targeted at
 [scripting](scripting_language "wikilink"), text processing and system
 configuration and management in general. Linux distributions support
 [shell scripts](shell_script "wikilink"), [awk](AWK "wikilink"),
-[sed](sed "wikilink") and [make](make_(software) "wikilink"). Many
+[sed](sed "wikilink") and [make](<make_(software)> "wikilink"). Many
 programs also have an embedded programming language to support
 configuring or programming themselves. For example, [regular
 expressions](regular_expression "wikilink") are supported in programs
-like [grep](grep "wikilink") and [locate](locate_(Unix) "wikilink"), the
+like [grep](grep "wikilink") and [locate](<locate_(Unix)> "wikilink"), the
 traditional Unix message transfer agent [Sendmail](Sendmail "wikilink")
 contains its own [Turing complete](Turing_completeness "wikilink")
 scripting system, and the advanced text editor [GNU
@@ -724,17 +724,17 @@ Emacs](GNU_Emacs "wikilink") is built around a general purpose
 [Lisp](Emacs_Lisp "wikilink") interpreter.
 
 Most distributions also include support for [PHP](PHP "wikilink"),
-[Perl](Perl "wikilink"), [Ruby](Ruby_(programming_language) "wikilink"),
-[Python](Python_(programming_language) "wikilink") and other [dynamic
+[Perl](Perl "wikilink"), [Ruby](<Ruby_(programming_language)> "wikilink"),
+[Python](<Python_(programming_language)> "wikilink") and other [dynamic
 languages](dynamic_programming_language "wikilink"). While not as
 common, Linux also supports
-[C#](C_Sharp_(programming_language) "wikilink") and other
+[C#](<C_Sharp_(programming_language)> "wikilink") and other
 [CLI](Common_Language_Infrastructure "wikilink")
 [languages](List_of_CLI_languages "wikilink") (via
-[Mono](Mono_(software) "wikilink")),
-[Vala](Vala_(programming_language) "wikilink"), and
-[Scheme](Scheme_(programming_language) "wikilink"). [Guile
-Scheme](Guile_(programming_language) "wikilink") acts as an [extension
+[Mono](<Mono_(software)> "wikilink")),
+[Vala](<Vala_(programming_language)> "wikilink"), and
+[Scheme](<Scheme_(programming_language)> "wikilink"). [Guile
+Scheme](<Guile_(programming_language)> "wikilink") acts as an [extension
 language](scripting_language "wikilink") targeting the GNU system
 utilities, seeking to make the conventionally small,
 [static](static_typing "wikilink"), compiled C programs of [Unix
@@ -744,17 +744,17 @@ high-level scripting system; many GNU programs can be compiled with
 optional Guile [bindings](language_binding "wikilink") to this end. A
 number of [Java virtual machines](Java_virtual_machine "wikilink") and
 development kits run on Linux, including the original Sun Microsystems
-JVM ([HotSpot](HotSpot_(virtual_machine) "wikilink")), and IBM's J2SE
+JVM ([HotSpot](<HotSpot_(virtual_machine)> "wikilink")), and IBM's J2SE
 RE, as well as many open-source projects like [Kaffe](Kaffe "wikilink")
 and [Jikes RVM](Jikes_RVM "wikilink");
-[Kotlin](Kotlin_(programming_language) "wikilink"),
-[Scala](Scala_(programming_language) "wikilink"),
+[Kotlin](<Kotlin_(programming_language)> "wikilink"),
+[Scala](<Scala_(programming_language)> "wikilink"),
 [Groovy](Apache_Groovy "wikilink") and other [JVM
 languages](List_of_JVM_languages "wikilink") are also available.
 
 GNOME and [KDE](KDE "wikilink") are popular desktop environments and
 provide a framework for developing applications. These projects are
-based on the [GTK](GTK "wikilink") and [Qt](Qt_(toolkit) "wikilink")
+based on the [GTK](GTK "wikilink") and [Qt](<Qt_(toolkit)> "wikilink")
 widget toolkits, respectively, which can also be used independently of
 the larger framework. Both support a wide variety of languages. There
 are [a
@@ -764,13 +764,13 @@ environments](Integrated_development_environment "wikilink") available
 including [Anjuta](Anjuta "wikilink"),
 [Code::Blocks](Code::Blocks "wikilink"),
 [CodeLite](CodeLite "wikilink"),
-[Eclipse](Eclipse_(software) "wikilink"), [Geany](Geany "wikilink"),
+[Eclipse](<Eclipse_(software)> "wikilink"), [Geany](Geany "wikilink"),
 [ActiveState Komodo](ActiveState_Komodo "wikilink"),
 [KDevelop](KDevelop "wikilink"),
-[Lazarus](Lazarus_(software) "wikilink"),
+[Lazarus](<Lazarus_(software)> "wikilink"),
 [MonoDevelop](MonoDevelop "wikilink"), [NetBeans](NetBeans "wikilink"),
 and [Qt Creator](Qt_Creator "wikilink"), while the long-established
-editors [Vim](Vim_(text_editor) "wikilink"), [nano](GNU_nano "wikilink")
+editors [Vim](<Vim_(text_editor)> "wikilink"), [nano](GNU_nano "wikilink")
 and [Emacs](Emacs "wikilink") remain popular.[96]
 
 ## Hardware support
@@ -786,7 +786,7 @@ architectures](computer_architecture "wikilink"), including
 the [IBM Z](IBM_Z "wikilink") mainframes. Specialized distributions and
 kernel forks exist for less mainstream architectures; for example, the
 [ELKS](Embeddable_Linux_Kernel_Subset "wikilink") kernel
-[fork](fork_(software_development) "wikilink") can run on [Intel
+[fork](<fork_(software_development)> "wikilink") can run on [Intel
 8086](Intel_8086 "wikilink") or [Intel 80286](Intel_80286 "wikilink")
 16-bit microprocessors, while the [µClinux](µClinux "wikilink") kernel
 fork may run on systems without a [memory management
@@ -803,7 +803,7 @@ players](Portable_media_player "wikilink"), and mobile phones.
 Linux has a reputation for supporting old hardware very well by
 maintaining standardized drivers for a long time.[99] There are several
 industry associations and hardware
-[conferences](Convention_(meeting) "wikilink") devoted to maintaining
+[conferences](<Convention_(meeting)> "wikilink") devoted to maintaining
 and improving support for diverse hardware under Linux, such as
 [FreedomHEC](FreedomHEC "wikilink"). Over time, support for different
 hardware has improved in Linux, resulting in any off-the-shelf purchase
@@ -820,8 +820,7 @@ Many quantitative studies of free/open-source software focus on topics
 including market share and reliability, with numerous studies
 specifically examining Linux.[102] The Linux market is growing, and the
 Linux operating system market size is expected to see a growth of 19.2%
-by 2027, reaching $15.64 billion, compared to $3.89 billion in
-2019.[103] Analysts project a Compound Annual Growth Rate (CAGR) of
+by 2027, reaching $15.64 billion, compared to $3.89 billion in 2019.[103] Analysts project a Compound Annual Growth Rate (CAGR) of
 13.7% between 2024 and 2032, culminating in a market size of USD 34.90
 billion by the latter year.[104] Analysts and proponents attribute the
 relative success of Linux to its security, reliability, low cost, and
@@ -837,18 +836,16 @@ around 72.9%, while [macOS](macOS "wikilink") covers around 16.13%.[107]
 
 <!-- -->
 
-Web servers  
+Web servers
 
 <!-- -->
 
-  
 W3Cook publishes stats that use the top 1,000,000 Alexa domains,[108]
 which estimate that 96.55% of web servers run Linux, 1.73% run Windows,
 and 1.72% run FreeBSD.[109]
 
 <!-- -->
 
-  
 W3Techs publishes stats that use the top 10,000,000 Alexa domains and
 the top 1,000,000 Tranco domains, updated monthly[110] and estimate that
 Linux is used by 39% of the web servers, versus 21.9% being used by
@@ -857,7 +854,6 @@ types of Unix.[112]
 
 <!-- -->
 
-  
 [IDC](International_Data_Corporation "wikilink")'s Q1 2007 report
 indicated that Linux held 12.7% of the overall server market at that
 time;[113] this estimate was based on the number of Linux servers sold
@@ -881,7 +877,7 @@ attributed to various niche platforms.[116]
 Film production  
 For years, Linux has been the platform of choice in the film industry.
 The first major film produced on Linux servers was 1997's
-*[Titanic](Titanic_(1997_film) "wikilink")*.[117][118] Since then major
+_[Titanic](<Titanic_(1997_film)> "wikilink")_.[117][118] Since then major
 studios including [DreamWorks
 Animation](DreamWorks_Animation "wikilink"), [Pixar](Pixar "wikilink"),
 [Weta Digital](Weta_Digital "wikilink"), and [Industrial Light &
@@ -940,7 +936,7 @@ conventional proprietary means, it would have cost about to develop in
 in the United States.[135] Most of the source code (71%) was written in
 the C programming language, but many other languages were used,
 including [C++](C++ "wikilink"),
-[Lisp](Lisp_(programming_language) "wikilink"), assembly language, Perl,
+[Lisp](<Lisp_(programming_language)> "wikilink"), assembly language, Perl,
 Python, [Fortran](Fortran "wikilink"), and various [shell
 scripting](shell_script "wikilink") languages. Slightly over half of all
 lines of code were licensed under the GPL. The Linux kernel itself was
@@ -968,9 +964,9 @@ role="doc-backlink">↩︎</a></li>
 </ol>
 </aside>
 
-In the United States, the name *Linux* is a trademark registered to
+In the United States, the name _Linux_ is a trademark registered to
 Linus Torvalds.[138] Initially, nobody registered it. However, on August
-15, 1994, William R. Della Croce Jr. filed for the trademark *Linux*,
+15, 1994, William R. Della Croce Jr. filed for the trademark _Linux_,
 and then demanded royalties from Linux distributors. In 1996, Torvalds
 and some affected organizations sued him to have the trademark assigned
 to Torvalds, and, in 1997, the case was settled.[139] The licensing of
@@ -981,7 +977,7 @@ LMI originally charged a nominal sublicensing fee for use of the Linux
 name as part of trademarks,[140] but later changed this in favor of
 offering a free, perpetual worldwide sublicense.[141]
 
-The Free Software Foundation (FSF) prefers *GNU/Linux* as the name when
+The Free Software Foundation (FSF) prefers _GNU/Linux_ as the name when
 referring to the operating system as a whole, because it considers Linux
 distributions to be [variants](GNU_variants "wikilink") of the GNU
 operating system initiated in 1983 by [Richard
@@ -992,9 +988,9 @@ not a part of it.
 
 A minority of public figures and software projects other than Stallman
 and the FSF, notably Debian (which had been sponsored by the FSF up to
-1996),[144] also use *GNU/Linux* when referring to the operating system
+1996),[144] also use _GNU/Linux_ when referring to the operating system
 as a whole.[145][146][147] Most media and common usage, however, refers
-to this family of operating systems simply as *Linux*, as do many large
+to this family of operating systems simply as _Linux_, as do many large
 Linux distributions (for example, [SUSE Linux](SUSE_Linux "wikilink")
 and [Red Hat Enterprise Linux](Red_Hat_Enterprise_Linux "wikilink")). By
 contrast, Linux distributions containing only free software use
@@ -1013,30 +1009,30 @@ dependencies.[148]
 
 ## See also
 
--   [Comparison of Linux
-    distributions](Comparison_of_Linux_distributions "wikilink")
--   [Comparison of open-source and closed-source
-    software](Comparison_of_open-source_and_closed-source_software "wikilink")
--   [Comparison of operating
-    systems](Comparison_of_operating_systems "wikilink")
--   [Comparison of X Window System desktop
-    environments](Comparison_of_X_Window_System_desktop_environments "wikilink")
--   [Criticism of Linux](Criticism_of_Linux "wikilink")
--   [Linux kernel version
-    history](Linux_kernel_version_history "wikilink")
--   [Linux Documentation
-    Project](Linux_Documentation_Project "wikilink")
--   [Linux From Scratch](Linux_From_Scratch "wikilink")
--   [Linux Software Map](Linux_Software_Map "wikilink")
--   [List of Linux
-    distributions](List_of_Linux_distributions "wikilink")
--   [List of games released on Linux](List_of_Linux_games "wikilink")
--   [List of operating systems](List_of_operating_systems "wikilink")
--   [Loadable kernel module](Loadable_kernel_module "wikilink")
--   [Usage share of operating
-    systems](Usage_share_of_operating_systems "wikilink")
--   [Timeline of operating
-    systems](Timeline_of_operating_systems "wikilink")
+- [Comparison of Linux
+  distributions](Comparison_of_Linux_distributions "wikilink")
+- [Comparison of open-source and closed-source
+  software](Comparison_of_open-source_and_closed-source_software "wikilink")
+- [Comparison of operating
+  systems](Comparison_of_operating_systems "wikilink")
+- [Comparison of X Window System desktop
+  environments](Comparison_of_X_Window_System_desktop_environments "wikilink")
+- [Criticism of Linux](Criticism_of_Linux "wikilink")
+- [Linux kernel version
+  history](Linux_kernel_version_history "wikilink")
+- [Linux Documentation
+  Project](Linux_Documentation_Project "wikilink")
+- [Linux From Scratch](Linux_From_Scratch "wikilink")
+- [Linux Software Map](Linux_Software_Map "wikilink")
+- [List of Linux
+  distributions](List_of_Linux_distributions "wikilink")
+- [List of games released on Linux](List_of_Linux_games "wikilink")
+- [List of operating systems](List_of_operating_systems "wikilink")
+- [Loadable kernel module](Loadable_kernel_module "wikilink")
+- [Usage share of operating
+  systems](Usage_share_of_operating_systems "wikilink")
+- [Timeline of operating
+  systems](Timeline_of_operating_systems "wikilink")
 
 ## Notes
 
@@ -1044,17 +1040,17 @@ dependencies.[148]
 
 ## External links
 
--   
+-
 
--   [Graphical map of Linux
-    Internals](https://web.archive.org/web/20100211130125/http://www.makelinux.net/system/new)
-    (archived)
+- [Graphical map of Linux
+  Internals](https://web.archive.org/web/20100211130125/http://www.makelinux.net/system/new)
+  (archived)
 
--   [Linux kernel website and archives](https://www.kernel.org/)
+- [Linux kernel website and archives](https://www.kernel.org/)
 
--   [The History of Linux in GIT Repository Format
-    1992–2010](https://archive.org/details/git-history-of-linux)
-    (archived)
+- [The History of Linux in GIT Repository Format
+  1992–2010](https://archive.org/details/git-history-of-linux)
+  (archived)
 
 [ ](Category:Linux "wikilink") [Category:1991
 software](Category:1991_software "wikilink") [Category:Computing
@@ -1181,8 +1177,8 @@ url-status=live \| archive-url =
 
 [49]
 
-[50] Torvalds, Linus and Diamond, David, *Just for Fun: The Story of an
-Accidental Revolutionary*, 2001,
+[50] Torvalds, Linus and Diamond, David, _Just for Fun: The Story of an
+Accidental Revolutionary_, 2001,
 
 [51]
 

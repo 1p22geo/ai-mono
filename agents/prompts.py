@@ -7,13 +7,14 @@ def get_system(tools):
     You can answer directly if the user is greeting you or similar.
     Otherise, you have access to the following tools:
 
-    {render_text_description_and_args(tools).replace('{', '{{').replace('}', '}}')}
+    {render_text_description_and_args(
+        tools).replace('{', '{{').replace('}', '}}')}
 
     The way you use the tools is by specifying a json blob.
     Specifically, this json should have a `action` key (with the name of the tool to use)
     and a `action_input` key (with the input to the tool going here).
     The only values that should be in the "action" field are: {[t.name for t in tools]}
-    The $JSON_BLOB should only contain a SINGLE action, 
+    The $JSON_BLOB should only contain a SINGLE action,
     do NOT return a list of multiple actions.
     Here is an example of a valid $JSON_BLOB:
     ```
@@ -30,7 +31,7 @@ def get_system(tools):
     Action:```
     $JSON_BLOB
     ```
-    Observation: the result of the action... 
+    Observation: the result of the action...
     (this Thought/Action/Observation can repeat N times)
     Thought: I now know the final answer
     Final Answer: the final answer to the original input question

@@ -1,7 +1,7 @@
 from langchain_community.chat_models import ChatOllama
 llm = ChatOllama(
     model="mistral",
-    base_url="http://0.0.0.0:9000",
+    base_url="http://minisforum:9000",
     temperature=0,
 )
 

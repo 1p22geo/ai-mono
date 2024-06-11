@@ -14,11 +14,11 @@ import os
 retrieval_qa_chat_prompt = hub.pull("langchain-ai/retrieval-qa-chat")
 
 embeddings = OllamaEmbeddings(
-    base_url="http://minisforum:9000", model="nomic-embed-text")
+    base_url="http://localhost:9000", model="nomic-embed-text")
 
 ollama = Ollama(
-    base_url='http://minisforum:9000',
-    model="llama3"
+    base_url='http://localhost:9000',
+    model="mistral"
 )
 
 texts = []

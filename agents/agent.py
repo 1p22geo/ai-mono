@@ -26,6 +26,6 @@ agent = (
 )
 
 
-executor = AgentExecutor(agent=agent, tools=tools, verbose=False, handle_parsing_errors=True).with_types(
+executor = AgentExecutor(agent=agent, tools=tools, verbose=True, handle_parsing_errors=True).with_types(
     input_type=AgentInput
 )

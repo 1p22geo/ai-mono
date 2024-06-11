@@ -23,7 +23,7 @@ class Article(BaseModel):
 def search(query: str) -> List[Article]:
     print(f"SEARCH {query}")
     q = urllib.parse.quote_plus(query)
-    req = requests.get(f"http://192.168.50.156:3000/api/search?q={q}")
+    req = requests.get(f"http://0.0.0.0:3000/api/search?q={q}")
     res = req.json()
     docs = []
     for doc in res:

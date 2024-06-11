@@ -25,7 +25,7 @@ class ArticleContent(BaseModel):
 def get(title: str) -> ArticleContent | None:
     print(f"GET {title}")
     q = urllib.parse.quote_plus(title)
-    req = requests.get(f"http://192.168.50.156:3000/api/search?q={q}")
+    req = requests.get(f"http://0.0.0.0:3000/api/search?q={q}")
     res = req.json()
     for doc in res:
         return ArticleContent(

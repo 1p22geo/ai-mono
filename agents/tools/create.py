@@ -25,7 +25,7 @@ class ArticleContent(BaseModel):
 def create(title: str) -> ArticleContent | None:
     print(f"CREATE {title}")
     q = urllib.parse.quote_plus(title)
-    req = requests.get(f"http://192.168.50.156:3000/api/page/{q}")
+    req = requests.get(f"http://0.0.0.0:3000/api/page/{q}")
     res = req.json()
     try:
         return ArticleContent(

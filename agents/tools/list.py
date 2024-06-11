@@ -21,7 +21,7 @@ class Article(BaseModel):
 
 def find() -> List[Article]:
     print("LIST")
-    req = requests.get("http://192.168.50.156:3000/api/search")
+    req = requests.get("http://0.0.0.0:3000/api/search")
     res = req.json()
     docs = []
     for doc in res:
